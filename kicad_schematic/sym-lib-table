@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "wave_flume_daq")(type "KiCad")(uri "${KIPRJMOD}/wave_flume_daq.kicad_sym")(options "")(descr "Wave flume DAQ project symbols"))
+)

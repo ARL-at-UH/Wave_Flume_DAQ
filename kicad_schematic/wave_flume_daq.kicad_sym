@@ -1,0 +1,2025 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "9.0")
+	(symbol "AWP24_3"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "WG" (at 0 11.43 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "AWP24_3" (at 0 -11.43 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Akamina AWP-24-3 capacitance wave height gauge, 8-24 VDC, +/-5 V out. Run W1-W4 as 5 single wires: org/blk/wht/blk/blk - ring-mark the blacks E/C/D" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "AWP24_3_0_1"
+			(rectangle (start -15.24 8.89) (end 15.24 -8.89)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "AWP24_3_1_1"
+			(pin passive line (at 17.78 6.35 180) (length 2.54)
+				(name "PWR_HI (org)" (effects (font (size 1.27 1.27)))) (number "F" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 3.81 180) (length 2.54)
+				(name "PWR_LO (blk)" (effects (font (size 1.27 1.27)))) (number "E" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 1.27 180) (length 2.54)
+				(name "SIG_HI (wht)" (effects (font (size 1.27 1.27)))) (number "B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -1.27 180) (length 2.54)
+				(name "SIG_LO (blk)" (effects (font (size 1.27 1.27)))) (number "C" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -3.81 180) (length 2.54)
+				(name "SHIELD (blk)" (effects (font (size 1.27 1.27)))) (number "D" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -6.35 180) (length 2.54)
+				(name "N/C" (effects (font (size 1.27 1.27)))) (number "A" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "CONN5_WG"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "J" (at 0 11.43 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "CONN5_WG" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "M12 B-code 5-pos pair for wave gauges: Phoenix SACC-M12FSB-5PL SH (1424664) push-lock plug on the Belden 8723 mates TE T4171010405-002 male receptacle, 0.5 m pigtail to DIN rails. B-code cannot mate the A-coded J5-J8. Drain rides contact 5 - leave the SH shield shell unterminated (single-point ground at the GND bus)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "CONN5_WG_0_1"
+			(rectangle (start -15.24 8.89) (end 15.24 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -15.24 6.35) (xy 15.24 6.35))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 3.81) (xy 15.24 3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 1.27) (xy 15.24 1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 -1.27) (xy 15.24 -1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 -3.81) (xy 15.24 -3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "CONN5_WG_1_1"
+			(pin passive line (at -17.78 6.35 0) (length 2.54)
+				(name "1=PWR_HI" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 6.35 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 3.81 0) (length 2.54)
+				(name "2=PWR_LO" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 3.81 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 1.27 0) (length 2.54)
+				(name "3=SIG_HI" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 1.27 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -1.27 0) (length 2.54)
+				(name "4=SIG_LO" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -1.27 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -3.81 0) (length 2.54)
+				(name "5=SHIELD" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -3.81 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "CONN5_AMP"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "J" (at 0 12.70 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "CONN5_AMP" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "M12 A-code 5-pos pair between IAA100 (at the flume) and panel: Phoenix SACC-M12FS-5PL (1424652) push-lock plug on the amp cable mates TE T4171010005-002 male receptacle; 0.5 m pigtail to DIN rails. Contacts mirror the IAA100 power-side pins 1-5" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "CONN5_AMP_0_1"
+			(rectangle (start -15.24 10.16) (end 15.24 -5.08)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -15.24 7.62) (xy 15.24 7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 5.08) (xy 15.24 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 2.54) (xy 15.24 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 0.00) (xy 15.24 0.00))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 -2.54) (xy 15.24 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "CONN5_AMP_1_1"
+			(pin passive line (at -17.78 7.62 0) (length 2.54)
+				(name "1=+VIN (24V)" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 7.62 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 5.08 0) (length 2.54)
+				(name "2=PWR_GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 2.54 0) (length 2.54)
+				(name "3=SHUNT" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 0.00 0) (length 2.54)
+				(name "4=OUT_GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 0.00 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -2.54 0) (length 2.54)
+				(name "5=VOUT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "CONN5_PS"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "J" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "CONN5_PS" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "M12 A-code 5-pos pair for the Setra 239 (same Phoenix 1424652 plug + TE T4171010005-002 receptacle as J5-J7 - IDENTICAL connectors, so label J8 unmistakably to prevent cross-plugging)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "CONN5_PS_0_1"
+			(rectangle (start -15.24 7.62) (end 15.24 -7.62)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -15.24 5.08) (xy 15.24 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 2.54) (xy 15.24 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 0.00) (xy 15.24 0.00))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 -2.54) (xy 15.24 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -15.24 -5.08) (xy 15.24 -5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "CONN5_PS_1_1"
+			(pin passive line (at -17.78 5.08 0) (length 2.54)
+				(name "1=+EXC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 2.54 0) (length 2.54)
+				(name "2=-EXC" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 0.00 0) (length 2.54)
+				(name "3=+OUT" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 0.00 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -2.54 0) (length 2.54)
+				(name "4=-OUT" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -5.08 0) (length 2.54)
+				(name "5=SHIELD" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "LSB210"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "LC" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "LSB210" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "FUTEK LSB210 10 lb S-beam load cell, 2 mV/V, shield floats at cell" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "LSB210_0_1"
+			(rectangle (start -15.24 7.62) (end 15.24 -7.62)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "LSB210_1_1"
+			(pin passive line (at 17.78 5.08 180) (length 2.54)
+				(name "+EXC (red)" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 2.54 180) (length 2.54)
+				(name "+SIG (grn)" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 0.00 180) (length 2.54)
+				(name "-SIG (wht)" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -2.54 180) (length 2.54)
+				(name "-EXC (blk)" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -5.08 180) (length 2.54)
+				(name "SHIELD" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "IAA100"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "U" (at 0 12.70 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "IAA100" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "FUTEK IAA100 amplifier: supply 12-30 VDC (FI1573), 1 W max, 1.2 A inrush; bridge excitation 5/10 V DIP-generated internally; +/-10 V out; grounds common internally; land cable shield on the CHASSIS screw per current manual" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "IAA100_0_1"
+			(rectangle (start -17.78 10.16) (end 17.78 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "IAA100_1_1"
+			(pin passive line (at -20.32 5.08 0) (length 2.54)
+				(name "+EXC" (effects (font (size 1.27 1.27)))) (number "S1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -20.32 2.54 0) (length 2.54)
+				(name "+SIG" (effects (font (size 1.27 1.27)))) (number "S2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -20.32 0.00 0) (length 2.54)
+				(name "-SIG" (effects (font (size 1.27 1.27)))) (number "S3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -20.32 -2.54 0) (length 2.54)
+				(name "-EXC/SHD" (effects (font (size 1.27 1.27)))) (number "S4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 7.62 180) (length 2.54)
+				(name "+VIN" (effects (font (size 1.27 1.27)))) (number "P1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 5.08 180) (length 2.54)
+				(name "PWR_GND" (effects (font (size 1.27 1.27)))) (number "P2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 2.54 180) (length 2.54)
+				(name "SHUNT" (effects (font (size 1.27 1.27)))) (number "P3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 0.00 180) (length 2.54)
+				(name "OUT_GND" (effects (font (size 1.27 1.27)))) (number "P4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 -2.54 180) (length 2.54)
+				(name "VOUT" (effects (font (size 1.27 1.27)))) (number "P5" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "SETRA239"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "PT" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "SETRA239" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Setra 239 (label: 2391-015WB1F23259NN): range +/-15 inWC, excitation 22-30 VDC single supply (24 V nominal), output +/-2.5 VDC bipolar, 4-terminal network - standard unit confirmed, no violet lead" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "SETRA239_0_1"
+			(rectangle (start -17.78 7.62) (end 17.78 -7.62)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "SETRA239_1_1"
+			(pin passive line (at 20.32 5.08 180) (length 2.54)
+				(name "+EXC (wht/red)" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 2.54 180) (length 2.54)
+				(name "-EXC (blk)" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 0.00 180) (length 2.54)
+				(name "+OUT (yel/grn)" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 -2.54 180) (length 2.54)
+				(name "-OUT (brn/wht)" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 20.32 -5.08 180) (length 2.54)
+				(name "SHIELD=case" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "USB1608G"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at 0 38.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USB1608G"
+				(at 0 -38.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "MCC USB-1608G - all 54 screw terminals shown, DIFFERENTIAL mode names per manual Fig. 5. Used: CH0-CH7 H/L pairs + AGND pins 12 and 39. Every terminal marked X is unused - leave empty. Pins 13/15/27/47/48 are NC on the plain 1608G."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USB1608G_0_1"
+				(rectangle
+					(start -20.32 35.56)
+					(end 20.32 -35.56)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "USB1608G_1_1"
+			(pin passive line
+				(at -22.86 33.02 0)
+				(length 2.54)
+				(name "CH0H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 30.480000000000004 0)
+				(length 2.54)
+				(name "CH0L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 27.940000000000005 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 25.400000000000002 0)
+				(length 2.54)
+				(name "CH1H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 22.860000000000003 0)
+				(length 2.54)
+				(name "CH1L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 20.320000000000004 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 17.78 0)
+				(length 2.54)
+				(name "CH2H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 15.240000000000002 0)
+				(length 2.54)
+				(name "CH2L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 12.700000000000003 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 10.160000000000004 0)
+				(length 2.54)
+				(name "CH3H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 7.6200000000000045 0)
+				(length 2.54)
+				(name "CH3L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 5.080000000000002 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 2.5400000000000027 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 0.0 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -2.539999999999999 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -5.079999999999998 0)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -7.619999999999997 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -10.159999999999997 0)
+				(length 2.54)
+				(name "DIO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -12.699999999999996 0)
+				(length 2.54)
+				(name "DIO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -15.239999999999995 0)
+				(length 2.54)
+				(name "DIO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -17.779999999999994 0)
+				(length 2.54)
+				(name "DIO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -20.32 0)
+				(length 2.54)
+				(name "DIO4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -22.86 0)
+				(length 2.54)
+				(name "DIO5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -25.4 0)
+				(length 2.54)
+				(name "DIO6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -27.939999999999998 0)
+				(length 2.54)
+				(name "DIO7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -30.479999999999997 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 -33.02 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 33.02 180)
+				(length 2.54)
+				(name "CH7L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 30.480000000000004 180)
+				(length 2.54)
+				(name "CH7H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 27.940000000000005 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 25.400000000000002 180)
+				(length 2.54)
+				(name "CH6L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 22.860000000000003 180)
+				(length 2.54)
+				(name "CH6H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 20.320000000000004 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 17.78 180)
+				(length 2.54)
+				(name "CH5L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 15.240000000000002 180)
+				(length 2.54)
+				(name "CH5H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 12.700000000000003 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 10.160000000000004 180)
+				(length 2.54)
+				(name "CH4L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 7.6200000000000045 180)
+				(length 2.54)
+				(name "CH4H"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 5.080000000000002 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 2.5400000000000027 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0.0 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -2.539999999999999 180)
+				(length 2.54)
+				(name "+5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -5.079999999999998 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -7.619999999999997 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -10.159999999999997 180)
+				(length 2.54)
+				(name "AICKI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -12.699999999999996 180)
+				(length 2.54)
+				(name "AICKO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -15.239999999999995 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -17.779999999999994 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -20.32 180)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -22.86 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -25.4 180)
+				(length 2.54)
+				(name "CTR1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -27.939999999999998 180)
+				(length 2.54)
+				(name "CTR0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -30.479999999999997 180)
+				(length 2.54)
+				(name "TMR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -33.02 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			)
+		)
+	(symbol "HDR24"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "A" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "HDR24" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Mean Well HDR-15-24: DIN-rail AC/DC, 85-264 VAC in, 24 V 0.63 A out, Class II - output floats (no earth bond)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "HDR24_0_1"
+			(rectangle (start -15.24 6.35) (end 15.24 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "HDR24_1_1"
+			(pin passive line (at -17.78 2.54 0) (length 2.54)
+				(name "AC L" (effects (font (size 1.27 1.27)))) (number "L" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -2.54 0) (length 2.54)
+				(name "AC N" (effects (font (size 1.27 1.27)))) (number "N" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 2.54 180) (length 2.54)
+				(name "+V 24V" (effects (font (size 1.27 1.27)))) (number "P" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -2.54 180) (length 2.54)
+				(name "-V (floating)" (effects (font (size 1.27 1.27)))) (number "M" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "HDR12"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "A" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "HDR12" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Mean Well HDR-15-12: DIN-rail AC/DC, 85-264 VAC in, 12 V 1.25 A out (adj 10.8-13.8 V - whole range inside the gauges' 8-24 V band), Class II - output floats" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "HDR12_0_1"
+			(rectangle (start -15.24 6.35) (end 15.24 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "HDR12_1_1"
+			(pin passive line (at -17.78 2.54 0) (length 2.54)
+				(name "AC L" (effects (font (size 1.27 1.27)))) (number "L" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -17.78 -2.54 0) (length 2.54)
+				(name "AC N" (effects (font (size 1.27 1.27)))) (number "N" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 2.54 180) (length 2.54)
+				(name "+V 12V" (effects (font (size 1.27 1.27)))) (number "P" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 17.78 -2.54 180) (length 2.54)
+				(name "-V (floating)" (effects (font (size 1.27 1.27)))) (number "M" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "FUSE"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "F" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "FUSE" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "DIN fuse terminal 5x20" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "FUSE_0_1"
+			(rectangle (start -2.54 1.27) (end 2.54 -1.27)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "FUSE_1_1"
+			(pin passive line (at -5.08 0.00 0) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 5.08 0.00 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "IEC_C14"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "IEC_C14" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "IEC C14 power-entry module, wall-mounted, with rocker switch + fuse; a standard C13 cord plugs in. PE bonds to the panel earth stud" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "IEC_C14_0_1"
+			(rectangle (start -12.70 5.08) (end 12.70 -5.08)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "IEC_C14_1_1"
+			(pin passive line (at 15.24 2.54 180) (length 2.54)
+				(name "L (sw+fuse)" (effects (font (size 1.27 1.27)))) (number "L" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 15.24 0.00 180) (length 2.54)
+				(name "N" (effects (font (size 1.27 1.27)))) (number "N" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 15.24 -2.54 180) (length 2.54)
+				(name "PE earth" (effects (font (size 1.27 1.27)))) (number "PE" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_AC"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 13.97 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_AC" (at 0 -11.43 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Mains distribution groups (Rail A): L1-L4 jumpered = AC line, N1-N4 jumpered = AC neutral (blocks are 800 V rated). Feeds the three Class II supplies from the C14 inlet" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_AC_0_1"
+			(rectangle (start -10.16 11.43) (end 10.16 -8.89)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -10.16 8.89) (xy 5.08 8.89))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 6.35) (xy 5.08 6.35))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 3.81) (xy 5.08 3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 1.27) (xy 5.08 1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -1.27) (xy 5.08 -1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -3.81) (xy 5.08 -3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -6.35) (xy 5.08 -6.35))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -8.89) (xy 5.08 -8.89))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 1.27) (xy 5.08 8.89))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 -8.89) (xy 5.08 -1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_AC_1_1"
+			(pin passive line (at -12.70 8.89 0) (length 2.54)
+				(name "L1" (effects (font (size 1.27 1.27)))) (number "L1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 6.35 0) (length 2.54)
+				(name "L2" (effects (font (size 1.27 1.27)))) (number "L2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 3.81 0) (length 2.54)
+				(name "L3" (effects (font (size 1.27 1.27)))) (number "L3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 1.27 0) (length 2.54)
+				(name "L4" (effects (font (size 1.27 1.27)))) (number "L4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -1.27 0) (length 2.54)
+				(name "N1" (effects (font (size 1.27 1.27)))) (number "N1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -3.81 0) (length 2.54)
+				(name "N2" (effects (font (size 1.27 1.27)))) (number "N2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -6.35 0) (length 2.54)
+				(name "N3" (effects (font (size 1.27 1.27)))) (number "N3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -8.89 0) (length 2.54)
+				(name "N4" (effects (font (size 1.27 1.27)))) (number "N4" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_C5_WG"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 11.43 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_C5_WG" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Per-connector landing strip (Rail C): the gauge bulkhead's 5 pigtail leads land here (terminal numbers = M12 contacts); internal panel wires leave the other side. NOT jumpered" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_C5_WG_0_1"
+			(rectangle (start -7.62 8.89) (end 7.62 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -7.62 6.35) (xy 7.62 6.35))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 3.81) (xy 7.62 3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 1.27) (xy 7.62 1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -1.27) (xy 7.62 -1.27))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -3.81) (xy 7.62 -3.81))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_C5_WG_1_1"
+			(pin passive line (at -10.16 6.35 0) (length 2.54)
+				(name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 6.35 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 3.81 0) (length 2.54)
+				(name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 3.81 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 1.27 0) (length 2.54)
+				(name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 1.27 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -1.27 0) (length 2.54)
+				(name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -1.27 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -3.81 0) (length 2.54)
+				(name "5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -3.81 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_C5_AMP"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 12.70 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_C5_AMP" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Per-connector landing strip (Rail C) for an amp bulkhead J5-J7: pigtail in, internal wires out; terminal 3 = shunt lead parking (back side empty). NOT jumpered" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_C5_AMP_0_1"
+			(rectangle (start -7.62 10.16) (end 7.62 -5.08)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -7.62 7.62) (xy 7.62 7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 5.08) (xy 7.62 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 2.54) (xy 7.62 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 0.00) (xy 7.62 0.00))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -2.54) (xy 7.62 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_C5_AMP_1_1"
+			(pin passive line (at -10.16 7.62 0) (length 2.54)
+				(name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 7.62 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 5.08 0) (length 2.54)
+				(name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 2.54 0) (length 2.54)
+				(name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 0.00 0) (length 2.54)
+				(name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 0.00 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -2.54 0) (length 2.54)
+				(name "5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_C5_PS"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_C5_PS" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "Per-connector landing strip (Rail C) for the pressure bulkhead J8: pigtail in, internal wires out. NOT jumpered" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_C5_PS_0_1"
+			(rectangle (start -7.62 7.62) (end 7.62 -7.62)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -7.62 5.08) (xy 7.62 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 2.54) (xy 7.62 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 0.00) (xy 7.62 0.00))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -2.54) (xy 7.62 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -5.08) (xy 7.62 -5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_C5_PS_1_1"
+			(pin passive line (at -10.16 5.08 0) (length 2.54)
+				(name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 2.54 0) (length 2.54)
+				(name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "2B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 0.00 0) (length 2.54)
+				(name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 0.00 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "3B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -2.54 0) (length 2.54)
+				(name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "4B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -5.08 0) (length 2.54)
+				(name "5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -5.08 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "5B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_V1"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 17.78 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_V1" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "DIN-rail bus terminals V1 (Rail A): A1-A5 jumpered = +24V, A6-A10 jumpered = 0V-A" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_V1_0_1"
+			(rectangle (start -10.16 15.24) (end 10.16 -15.24)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -10.16 12.70) (xy 5.08 12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 10.16) (xy 5.08 10.16))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 7.62) (xy 5.08 7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 5.08) (xy 5.08 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 2.54) (xy 5.08 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -2.54) (xy 5.08 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -5.08) (xy 5.08 -5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -7.62) (xy 5.08 -7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -10.16) (xy 5.08 -10.16))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -12.70) (xy 5.08 -12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 2.54) (xy 5.08 12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 -12.70) (xy 5.08 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_V1_1_1"
+			(pin passive line (at -12.70 12.70 0) (length 2.54)
+				(name "A1" (effects (font (size 1.27 1.27)))) (number "A1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 10.16 0) (length 2.54)
+				(name "A2" (effects (font (size 1.27 1.27)))) (number "A2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 7.62 0) (length 2.54)
+				(name "A3" (effects (font (size 1.27 1.27)))) (number "A3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 5.08 0) (length 2.54)
+				(name "A4" (effects (font (size 1.27 1.27)))) (number "A4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 2.54 0) (length 2.54)
+				(name "A5" (effects (font (size 1.27 1.27)))) (number "A5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -2.54 0) (length 2.54)
+				(name "A6" (effects (font (size 1.27 1.27)))) (number "A6" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -5.08 0) (length 2.54)
+				(name "A7" (effects (font (size 1.27 1.27)))) (number "A7" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -7.62 0) (length 2.54)
+				(name "A8" (effects (font (size 1.27 1.27)))) (number "A8" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -10.16 0) (length 2.54)
+				(name "A9" (effects (font (size 1.27 1.27)))) (number "A9" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -12.70 0) (length 2.54)
+				(name "A10" (effects (font (size 1.27 1.27)))) (number "A10" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_V2"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 17.78 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_V2" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "DIN-rail bus terminals V2 (Rail A): B1-B5 jumpered = +9.8V, B6-B10 jumpered = 0V-B" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_V2_0_1"
+			(rectangle (start -10.16 15.24) (end 10.16 -15.24)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -10.16 12.70) (xy 5.08 12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 10.16) (xy 5.08 10.16))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 7.62) (xy 5.08 7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 5.08) (xy 5.08 5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 2.54) (xy 5.08 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -2.54) (xy 5.08 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -5.08) (xy 5.08 -5.08))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -7.62) (xy 5.08 -7.62))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -10.16) (xy 5.08 -10.16))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -10.16 -12.70) (xy 5.08 -12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 2.54) (xy 5.08 12.70))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy 5.08 -12.70) (xy 5.08 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_V2_1_1"
+			(pin passive line (at -12.70 12.70 0) (length 2.54)
+				(name "B1" (effects (font (size 1.27 1.27)))) (number "B1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 10.16 0) (length 2.54)
+				(name "B2" (effects (font (size 1.27 1.27)))) (number "B2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 7.62 0) (length 2.54)
+				(name "B3" (effects (font (size 1.27 1.27)))) (number "B3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 5.08 0) (length 2.54)
+				(name "B4" (effects (font (size 1.27 1.27)))) (number "B4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 2.54 0) (length 2.54)
+				(name "B5" (effects (font (size 1.27 1.27)))) (number "B5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -2.54 0) (length 2.54)
+				(name "B6" (effects (font (size 1.27 1.27)))) (number "B6" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -5.08 0) (length 2.54)
+				(name "B7" (effects (font (size 1.27 1.27)))) (number "B7" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -7.62 0) (length 2.54)
+				(name "B8" (effects (font (size 1.27 1.27)))) (number "B8" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -10.16 0) (length 2.54)
+				(name "B9" (effects (font (size 1.27 1.27)))) (number "B9" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -12.70 0) (length 2.54)
+				(name "B10" (effects (font (size 1.27 1.27)))) (number "B10" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "TB_GND"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TB"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TB_GND"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DIN-rail GND bus G1-G6 (Rail C, all jumpered = AGND): shields G1-G4, Setra -Out tie G5, GND_24 ref jumper G6; 2 drops out to DAQ AGND pins 12 and 39"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TB_GND_0_1"
+				(rectangle
+					(start -10.16 8.89)
+					(end 10.16 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 6.35) (xy 2.54 6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 3.81) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -3.81) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TB_GND_1_1"
+			(pin passive line
+				(at -12.7 6.35 0)
+				(length 2.54)
+				(name "G1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 3.81 0)
+				(length 2.54)
+				(name "G2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 1.27 0)
+				(length 2.54)
+				(name "G3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -1.27 0)
+				(length 2.54)
+				(name "G4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -3.81 0)
+				(length 2.54)
+				(name "G5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -6.35 0)
+				(length 2.54)
+				(name "G6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			)
+		)
+	(symbol "TB_X2"
+		(pin_numbers (hide yes))
+		(pin_names (offset 1.016))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "TB" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TB_X2" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Description" "DIN-rail isolated feed-through pair X1-X2 (Rail A): Setra excitation only, never jumpered to any bus" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "TB_X2_0_1"
+			(rectangle (start -7.62 6.35) (end 7.62 -6.35)
+				(stroke (width 0.254) (type default)) (fill (type background)))
+			(polyline (pts (xy -7.62 2.54) (xy 7.62 2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+			(polyline (pts (xy -7.62 -2.54) (xy 7.62 -2.54))
+				(stroke (width 0.1524) (type default)) (fill (type none)))
+		)
+		(symbol "TB_X2_1_1"
+			(pin passive line (at -10.16 2.54 0) (length 2.54)
+				(name "X1" (effects (font (size 1.27 1.27)))) (number "X1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "X1B" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -10.16 -2.54 0) (length 2.54)
+				(name "X2" (effects (font (size 1.27 1.27)))) (number "X2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 10.16 -2.54 180) (length 2.54)
+				(name "~" (effects (font (size 1.27 1.27)))) (number "X2B" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	
+)

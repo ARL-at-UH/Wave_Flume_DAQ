@@ -1,0 +1,44 @@
+Group,Ref,Item,Spec,Qty,Status,Example part,Notes
+1 In hand,WG1-WG4,Wave height gauge,Akamina AWP-24-3,4,In hand,,Each includes one AWPC-01 (PT06E-10-6S) cable plug
+1 In hand,F1-F3,Load cell 10 lb S-beam,FUTEK LSB210 (FSH03942),3,In hand,,Integral 5 ft submersible cable - wires into IAA100 sensor block at the flume
+1 In hand,IAA-1..IAA-3,Strain gauge amplifier,FUTEK IAA100,3,In hand,,With IAA100/IAA200 4-pos sensor-side terminal housings; mounted at the flume
+1 In hand,PS1,Differential pressure transducer +/-15 inWC output +/-2.5 V,Setra 2391-015WB1F23259NN (excit 22-30 VDC standard 4-wire),1,In hand,,Integral 2 ft cable; check termination color code (Y1/Y4/Y6 vs 02/10/25)
+1 In hand,DAQ,USB data acquisition module,MCC USB-1208FS-Plus,1,In hand,,Single-ended mode; terminals 13-40 unused
+1 In hand,PSU,Triple-output DC bench supply,BK Precision 1672,1,In hand,,Retired to the bench (teaching setups + commissioning with current limit); panel is self-powered
+2 MOUSER - connectors,J1-J4 panel side,M12 B-code 5-pos MALE panel receptacle rear-mount 0.5 m pigtail,IP67; B-code cannot mate A-coded J5-J8,4 + 1 spare = 5,Buy,TE T4171010405-002,Mouser 571-T4171010405-002
+2 MOUSER - connectors,J1-J4 cable side,M12 B-code 5-pos FEMALE plug screw-terminal unshielded plastic PG9,Drain rides contact 5 (no shell to terminate); 18-24 AWG; build bundle OD to ~6-8 mm with heat-shrink at the gland,4 + 1 spare = 5 (AS ORDERED),Bought,TE T4110402051-000,Mouser 571-T4110402051-000
+2 MOUSER - connectors,J5-J8 panel side,M12 A-code 5-pos MALE panel receptacle rear-mount 0.5 m pigtail,IP67; pigtail colors 1 BN / 2 WH / 3 BU / 4 BK / 5 GY (verify insert),4 + 1 spare = 5,Buy,TE T4171010005-002,Mouser 571-T4171010005-002
+2 MOUSER - connectors,J5-J8 cable side,M12 A-code 5-pos FEMALE plug screw-terminal unshielded plastic PG7,18-24 AWG; cable OD ~4-6 mm; IP67,4 + 1 spare = 5 (AS ORDERED),Bought,TE T4110001051-000,Mouser 571-T4110001051-000
+2 MOUSER - connectors,J8 WARNING,J8 is IDENTICAL to J5-J7 - label all four,Cross-plugging misroutes the 24 V domains; B-coded J1-J4 cannot cross-mate,,,,Labels only - no part to buy
+2 MOUSER - wire,,Hook-up wire spool set 22 AWG stranded 6x25 ft (red/orange/yellow/black/white/green),Covers ALL panel-internal wiring - rails are inches apart,1,Buy,Adafruit 3111 (Mouser 485-3111),Green spool unused (never green in this panel)
+2 MOUSER - wire,,Hook-up wire 20 AWG stranded BLACK 100 ft,Field-bundle grounds: 3 conductors per gauge run + 2 per amp run,1,Buy,Alpha 3053 BK005,
+2 MOUSER - wire,,Hook-up wire 20 AWG stranded WHITE 100 ft,Field-bundle signals: 1 conductor per run,1,Buy,Alpha 3053 WH005,
+2 MOUSER - wire,,LENGTH CHECK before ordering: if any sensor-box-to-panel run exceeds ~6 ft add orange and red 100 ft spools back,Orange field need = 4 gauge runs; red = 3 amp runs; the 25 ft set spools cover them only for short runs,,,,
+2 MOUSER - wire,,Field-run note: each W1-W4 / W12-W14 run = a twisted bundle of 5 single wires,Heat-shrink the bundle where the Phoenix plug gland clamps (it seals on a round cable),,,,Twist the white+black signal pair tightly - it replaces the shielded pair
+3 MOUSER - power,A2 A3 (+spare),DIN-rail AC/DC supply 85-264 VAC in -> 24 V 0.63 A out Class II FLOATING output 17.5 mm,A2 = main 24 V rail; A3 = Setra excitation island (X1-X2 only); 3rd unit = shared backup,3,Buy,Mean Well HDR-15-24 (Mouser 709-HDR15-24),Class II - no earth bond on outputs
+3 MOUSER - power,A4 (+spare),DIN-rail AC/DC 85-264 VAC in -> 12 V 1.25 A Class II FLOATING output,Gauge rail V2 = +12 V (adj range 10.8-13.8 V all inside the gauges' 8-24 V band),2,Buy,Mean Well HDR-15-12 (Mouser 709-HDR15-12),Third mains-fed supply; L/N from the jumpered AC terminal groups
+3 MOUSER - power,,IEC C14 mains inlet module with switch + fuse,Single mains entry feeding both HDR supplies,1,Buy,Generic fused/switched C14 power entry module,Panel rear/side; supplies are Class II so no earth to them
+3 MOUSER - power,FA FB,DIN-rail fuse terminal blocks for 5x20 mm cartridge push-in,Feed of V1 (24 V) and V2 (12 V) buses,5,Buy,Phoenix PT 4-HESI (5X20) - 3211861,Confirmed P/N; 3rd = spare
+3 MOUSER - power,,Cartridge fuses 5x20 mm fast-acting: 0.5 A (FA) and 0.25 A (FB),,3 each,Buy,Littelfuse 0218.500MXP (time-delay) / 0217.250MXP,
+3 MOUSER - power,,Mains hookup: IEC cord + 18 AWG AC wiring inlet -> supplies,,1 set,Buy,,AC side only; route away from the signal duct
+4 MOUSER - DIN terminals,RED,Terminal blocks 2.5 mm2 screw-clamp (UT) - +24 V positions,A1-A5 + amp landing term 1 (8 used),10,Buy,Phoenix UT 2.5 RD (3045062),Block color = wire color
+4 MOUSER - DIN terminals,ORANGE,Terminal blocks - +12 V positions,B1-B5 + gauge landing term 1 (9 used),15,Buy,Phoenix UT 2.5 OG (3045046),
+4 MOUSER - DIN terminals,BLACK,Terminal blocks - power grounds GND_A / GND_B,A6-A10 + B6-B10 + all landing term 2 (18 used),25,Buy,Phoenix UT 2.5 BK (3045088),
+4 MOUSER - DIN terminals,BLUE,Terminal blocks - AGND measurement ground,G1-G6 + landing sig-lo/shield/out-gnd positions (18 used),30,Buy,Phoenix UT 2.5 BU (3044089),Blue = AGND only (AC neutral stays gray)
+4 MOUSER - DIN terminals,YELLOW,Terminal blocks - GND_C isolated island,X1 X2 + TB-J8 terms 1-2 (4 used),10,Buy,Phoenix UT 2.5 YE (3045059),NEVER jumper yellow to anything
+4 MOUSER - DIN terminals,WHITE,Terminal blocks - signal positions (Rail C landings),11 used,15,Buy,Phoenix UT 2.5 WH (3045075),White block = white signal wire
+4 MOUSER - DIN terminals,GRAY,Terminal blocks - AC mains L/N groups TB14,8 used,10,Buy,Phoenix UT 2.5 (3044076),Segregated at Rail A end with covers
+4 MOUSER - DIN terminals,,NEVER use green/yellow-striped PE blocks (UT 2.5-PE) anywhere,PE blocks bond conductively to the DIN rail - would earth the floating grounds,,,,
+4 MOUSER - DIN terminals,,Push-in jumper bars for TOPJOB S 2002,V1: 2x 5-pos; V2: 2x 5-pos; GND bus (6 blocks): 1x 5-pos + 1x 3-pos staggered; TB14 L/N: 2x 4-pos,Ordered 5x 5-pos + 5x 10-pos (now spares) + 5x 3-pos + 5x 4-pos,Bought,Phoenix FBS 5-5 3030190 / FBS 10-5 3030213 / FBS 3-5 3030174 / FBS 4-5 3030187,Blocks have two jumper slots - stagger to extend buses
+4 MOUSER - DIN terminals,,End covers + end brackets + marker strips,Covers at every group end & color boundary (~16) + rail anchors (~8),20 covers + 10 brackets (ordered; add 10 more CLIPFIX if spacing all landing groups) + markers,Bought,Phoenix D-UT 2.5/10 covers (3047028) x20 + CLIPFIX 35 (3022218) x10 - landing groups are SPACED ~20 mm apart (2 brackets each); markers: ZB 5 strips from the accessory tab,Label every terminal to match the schematic
+4 Panel hardware,PNL,VEVOR 24x24x8 in steel enclosure NEMA 4X with removable 21.7 in square backplate,Build the whole panel on the plate at the bench then drop it in; drill walls with 16 mm step bit for the M12s; C14 cutout = drill corners + file,1,Bought,VEVOR 24x24x8 (vevor.com / Amazon B0924C8KJ6),~$91-120
+4 Panel hardware,,DIN rail 35x7.5 mm slotted ALUMINUM 20 in pre-cut (4 rows + 1 spare on the backplate),No cutting needed; snap-check a UT block + CLIPFIX on arrival (profile tolerance),5-pack,Bought,Amazon International Connector 5x 20 in pack,Trim with hacksaw if a row lands near a plate corner screw
+4 Panel hardware,,Wire duct with cover 25 x 40 mm,Slotted duct ~1.5 m total,1,Buy,Panduit / Iboco,Often cheaper on Amazon/McMaster than Mouser
+4 Panel hardware,,Cable gland for the mains cord (only if using a cord instead of the C14 inlet),Nylon M16,1,Buy,,
+4 Panel hardware,,USB-B round panel-mount extension 30 cm (exterior jack; tail plugs into DAQ),Plain drilled round hole + plastic nut; panel <=16 mm,2,Buy,Adafruit 4216,Mouser 485-4216
+4 Panel hardware,,Earth stud M5 + ring lugs,Setra shield/case + panel bond,1,Buy,Brass stud kit,Hardware store fine
+4 Panel hardware,,Adhesive DIN clips or bracket for DAQ; splash hoods / small boxes for the 3 flume-side IAA100 amps,,1 + 3,Buy,Small ABS project boxes work for amp hoods,Amps are not submersible
+5 Consumables,,Ferrule crimp kit: SQUARE-profile self-adjusting ratchet crimper + assorted insulated ferrules covering 0.34 / 0.5 / 0.75-1.0 mm2 (AWG 22 / 20 / 18),MANDATORY with the UT screw-clamp blocks - every stranded conductor gets a ferrule,1 kit,Buy,Amazon: IWISS/Preciva-style kit ~$30; or Mouser: Knipex 97 53 04 + Phoenix AI-series ferrule bags ~$120,Collar colors are a SIZE code (won't match wire colors - that's normal)
+5 Consumables,,USB 2.0 A-B cable (PC to the 4216 exterior jack),Only if not already with the DAQ,1,Check,,
+5 Consumables,,Heat-shrink cable labels (W1-W14 both ends) + terminal marker pen,,1 cassette,Buy,,Survives splash better than flag labels
+5 Consumables,,Zip ties adhesive mounts spiral wrap + M4/M5 screws for rails/duct,,Assorted,Buy,,Hardware store

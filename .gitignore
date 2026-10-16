@@ -1,0 +1,31 @@
+# --- KiCad working cruft ---
+# local file history (contains its own embedded .git - would corrupt this repo as a phantom submodule)
+kicad_schematic/.history/
+# autosaves, backups, lock files
+*-bak
+*.bak
+*.bak-*
+_autosave-*
+*.lck
+~*.lck
+*.kicad_sch-bak
+*.kicad_pcb-bak
+fp-info-cache
+*-backups/
+# ERC / DRC report scratch output
+*.rpt
+
+# --- archives & duplicates ---
+*.zip
+
+# --- personal purchase records (contain name/address/payment info - keep local only) ---
+Cart_*.xls
+
+# --- OS junk ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- editor scratch ---
+*.swp
+*~
