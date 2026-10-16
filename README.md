@@ -26,20 +26,3 @@ the browser, nothing to install.
 | [`docs/`](docs/) | Build & operations documents: schematic PDF/SVG, as-ordered BOM, noise-debugging checklist |
 | [`ref/`](ref/) | Primary sources: sensor/DAQ manufacturer manuals and drawings (indexed in its README) |
 | [`kicad_schematic/`](kicad_schematic/) | KiCad 9/10 project — schematic, project symbol library |
-
-## Design rules worth knowing before touching anything
-
-- **Three power islands, each referenced to analog ground exactly once:** `GND_24` (force amps,
-  via the A6 jumper), `GND_12` (gauges, via their shields), `GND_24ISO` (Setra island, via −Out).
-  Never add a second path; never let yellow (`GND_24ISO`) blocks touch anything.
-- **Every channel is a twisted HI+LO pair:** gauges + pressure = **white (HI) / blue (LO)**;
-  load cells = **yellow (HI) / green (LO)**. Channels as installed: gauges CH0–CH3, force CH4–CH6,
-  pressure CH7. Wire the DAQ by **terminal number** — the USB-1608G silkscreen shows single-ended
-  names; the schematic's hookup block gives the numbers.
-- **Block color = wire color** on the DIN rails. No green/yellow PE blocks anywhere (they bond to
-  the rail and would earth the floating grounds).
-- M12 **B-code** (gauges, J1–J4) physically cannot mate **A-code** (amps + pressure, J5–J8) —
-  that keying separates the 12 V and 24 V domains. J5–J8 are identical to each other: read the labels.
-
-The full interface control document (pinouts, cable schedule, terminal maps, grounding rationale)
-is maintained as a living web document — ask the maintainer for the current link.
