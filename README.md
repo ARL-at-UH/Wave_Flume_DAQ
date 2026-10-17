@@ -23,6 +23,13 @@ the browser, nothing to install.
 
 | Path | Contents |
 |---|---|
-| [`docs/`](docs/) | Build & operations documents: schematic PDF/SVG, as-ordered BOM, noise-debugging checklist |
+| [`docs/`](docs/) | Hosted ICD (`index.html`), step-by-step [`procedures/`](docs/procedures/), [`debug/`](docs/debug/) guides, schematic PDF, as-ordered BOM |
 | [`ref/`](ref/) | Primary sources: sensor/DAQ manufacturer manuals and drawings (indexed in its README) |
 | [`kicad_schematic/`](kicad_schematic/) | KiCad 9/10 project — schematic, project symbol library |
+
+## Project site
+
+The full **Interface Control Document** (pinouts, cable schedule, terminal maps, grounding
+rationale) ships as [`docs/index.html`](docs/index.html). Enable **GitHub Pages**
+(Settings → Pages → Deploy from a branch → `main`, folder `/docs`) and it is served as the
+project's website — no build step, it's one self-contained page.
