@@ -2204,7 +2204,7 @@
 				(pin passive line
 					(at 20.32 5.08 180)
 					(length 2.54)
-					(name "+EXC_(wht/red)"
+					(name "+EXC_(red)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2240,7 +2240,7 @@
 				(pin passive line
 					(at 20.32 2.54 180)
 					(length 2.54)
-					(name "+OUT_(yel/grn)"
+					(name "+OUT_(grn)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2258,7 +2258,7 @@
 				(pin passive line
 					(at 20.32 0 180)
 					(length 2.54)
-					(name "-OUT_(brn/wht)"
+					(name "-OUT_(wht)"
 						(effects
 							(font
 								(size 1.27 1.27)

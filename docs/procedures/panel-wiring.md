@@ -54,6 +54,7 @@ Twist each HI wire with its LO partner the whole way, landing strip → DAQ.
 |---|---|---|---|---|---|
 | WG (gauge pins F/B/C/E/D) | red = PWR_HI | green = SIG_HI | white = SIG_LO | black = PWR_LO | shield drain |
 | LC (IAA100 power/output) | red = +VIN | white = VOUT | blue = OUT_GND | black = PWR_GND | orange = SHUNT |
+| PT (Setra 239, code 02/10/25) | red = +Exc | green = +Out | white = −Out | black = −Exc | shield = case |
 
 ## Ground references - each power island touches AGND exactly ONCE
 

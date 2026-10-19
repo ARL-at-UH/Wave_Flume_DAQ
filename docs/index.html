@@ -503,19 +503,19 @@ inside the IAA100; with the OutGnds now feeding CH4L–CH6L, the 24 V rail gets 
 wiring is complete (FUTEK warns against hot-plugging the supply).</p>
 
 <h3>IF-E - Pressure transducer flying leads (Setra 239)</h3>
-<p>The 239's captive cable has one of two factory color codes - check yours against both columns. It
-plugs into <strong>J8</strong>, the same connector pair as J5–J7, wired to the same 1 PWR+ / 2 HI /
-3 LO / 4 PWR− scheme. <strong>Label J5–J8 unmistakably</strong> - cross-plugging misroutes the 24 V
-domains. Keep −Exc and −Out on separate conductors all the way (true 4-terminal network); differential
-readout is the Setra manual's Option 1.</p>
+<p>The unit's captive cable carries the 02/10/25-style termination code, <strong>confirmed as built</strong>:
+red +Exc, black −Exc, green +Out, white −Out, shield = case. It plugs into <strong>J8</strong>, the same
+connector pair as J5–J7, wired to the same 1 PWR+ / 2 HI / 3 LO / 4 PWR− scheme. <strong>Label J5–J8
+unmistakably</strong> - cross-plugging misroutes the 24 V domains. Keep −Exc and −Out on separate
+conductors all the way (true 4-terminal network); differential readout is the Setra manual's Option 1.</p>
 <div class="tablewrap"><table>
-  <thead><tr><th>Function</th><th>Termination Y1/Y4/Y6</th><th>Termination 02/10/25</th><th>Connects to</th></tr></thead>
+  <thead><tr><th>Function</th><th>Setra wire (as built)</th><th>Connects to</th></tr></thead>
   <tbody>
-    <tr><td>+Excitation (24 V)</td><td><span class="wire w-white"></span>White</td><td><span class="wire w-red"></span>Red</td><td>J8-1 → <span class="wire w-brown"></span>BN pigtail → TB-J8:1 → X1 (+24V_C)</td></tr>
-    <tr><td>−Excitation</td><td><span class="wire w-black"></span>Black</td><td><span class="wire w-black"></span>Black</td><td>J8-4 → <span class="wire w-black"></span>BK pigtail → TB-J8:4 → X2 (GND_24ISO - floats, nowhere else)</td></tr>
-    <tr><td>+Output</td><td><span class="wire w-yellow"></span>Yellow</td><td><span class="wire w-green"></span>Green</td><td>J8-2 → <span class="wire w-white"></span>WH pigtail → TB-J8:2 → white wire → DAQ CH7H (pin 29)</td></tr>
-    <tr><td>−Output</td><td><span class="wire w-brown"></span>Brown</td><td><span class="wire w-white"></span>White</td><td>J8-3 → <span class="wire w-blue"></span>BU pigtail → TB-J8:3 → blue wire → DAQ CH7L (pin 28) <em>and</em> a wire → GND bus G5 (the island's single reference - keep both)</td></tr>
-    <tr><td>Shield</td><td colspan="2"><span class="wire w-shield"></span>Shield = case (both variants)</td><td>J8-5 → <span class="wire w-gray"></span>GY pigtail → TB-J8:5 → panel earth stud (case must be earthed)</td></tr>
+    <tr><td>+Excitation (24 V)</td><td><span class="wire w-red"></span>Red</td><td>J8-1 → <span class="wire w-brown"></span>BN pigtail → TB-J8:1 → X1 (+24V_C)</td></tr>
+    <tr><td>+Output</td><td><span class="wire w-green"></span>Green</td><td>J8-2 → <span class="wire w-white"></span>WH pigtail → TB-J8:2 → white wire → DAQ CH7H (pin 29)</td></tr>
+    <tr><td>−Output</td><td><span class="wire w-white"></span>White</td><td>J8-3 → <span class="wire w-blue"></span>BU pigtail → TB-J8:3 → blue wire → DAQ CH7L (pin 28) <em>and</em> a wire → GND bus G5 (the island's single reference - keep both)</td></tr>
+    <tr><td>−Excitation</td><td><span class="wire w-black"></span>Black</td><td>J8-4 → <span class="wire w-black"></span>BK pigtail → TB-J8:4 → X2 (GND_24ISO - floats, nowhere else)</td></tr>
+    <tr><td>Shield</td><td><span class="wire w-shield"></span>Shield = case</td><td>J8-5 → <span class="wire w-gray"></span>GY pigtail → TB-J8:5 → panel earth stud (case must be earthed)</td></tr>
   </tbody>
 </table></div>
 
