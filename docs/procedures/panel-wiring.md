@@ -1,6 +1,6 @@
 # Procedure · Panel signal wiring (landing strips → DAQ)
 
-The schematic is the wiring authority — this is the bench procedure distilled from it.
+The schematic is the wiring authority - this is the bench procedure distilled from it.
 **Wire the DAQ by terminal NUMBER.** The USB-1608G silkscreen shows single-ended names; in
 differential mode the same screws become H/L pairs.
 
@@ -26,20 +26,20 @@ Twist each HI wire with its LO partner the whole way, landing strip → DAQ.
 | CH6 | F3 (IAA-3) | TB-J7: term 5 / term 4 | yellow → **32** | green → **31** |
 | CH7 | PS1 Setra | TB-J8: term 3 / term 4 | white → **29** | blue → **28** |
 
-## Ground references — each power island touches AGND exactly ONCE
+## Ground references - each power island touches AGND exactly ONCE
 
 | GND bus position | Connection |
 |---|---|
 | G1–G4 | Gauge shields in (TB-J1..J4 term 5, black wire) |
-| G5 | Setra −Out tie (TB-J8 term 4 **also** runs a black wire here — keep both its wires) |
+| G5 | Setra −Out tie (TB-J8 term 4 **also** runs a black wire here - keep both its wires) |
 | G6 | GND_24 reference jumper from block A6 (force island's only path to AGND) |
 | back sides | 2 drops out → DAQ pins **12** and **39** |
 
 ## Rules
 
-- Gauge/amp signal-low wires go ONLY to their CHxL pins — never to the GND bus.
+- Gauge/amp signal-low wires go ONLY to their CHxL pins - never to the GND bus.
 - Yellow blocks (GND_24ISO / Setra excitation) never connect to anything outside the island.
-- Never land a supply wire on a DAQ terminal — absolute max input is ±25 V to AGND.
-- Terminals marked X on the schematic stay empty (incl. DAQ pins 13, 15, 27, 47, 48 — true no-connects).
-- Shunt-cal lines park on TB-J5..J7 term 3, back side empty — see `shunt-calibration.md`.
+- Never land a supply wire on a DAQ terminal - absolute max input is ±25 V to AGND.
+- Terminals marked X on the schematic stay empty (incl. DAQ pins 13, 15, 27, 47, 48 - true no-connects).
+- Shunt-cal lines park on TB-J5..J7 term 3, back side empty - see `shunt-calibration.md`.
 - Ferrule every stranded conductor into a screw clamp.

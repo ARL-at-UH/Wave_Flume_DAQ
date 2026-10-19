@@ -1,4 +1,4 @@
-# ref/ — Reference documents
+# ref/ - Reference documents
 
 Primary sources for the wave flume DAQ panel. The design documents (ICD, schematic, BOM) cite these.
 
@@ -11,6 +11,6 @@ Primary sources for the wave flume DAQ panel. The design documents (ICD, schemat
 | `239-Operating-Instructions.pdf` | Setra 204/239 operating instructions (SS0461 Rev. I) | 4-terminal rule (−Exc never to −Out), termination color codes, multi-hookup options |
 | `digilent-usb-1608g-manual.pdf` | MCC USB-1608G user's guide (Digilent, Jan 2019 Rev 2) | Differential pinout (Fig. 5), floating-source 100 kΩ rule, ±10.2 V common-mode window, specs |
 | `hdr-15-spec.pdf` | Mean Well HDR-15 series datasheet | Class II floating output, adjustment ranges, derating |
-| `DAQ_Sketch.pdf` | Original hand sketch of the system | Historical — source of the channel assignments (force CH0–2, pressure CH3, gauges CH4–7) |
+| `DAQ_Sketch.pdf` | Original hand sketch of the system | Historical - source of the channel assignments (force CH0–2, pressure CH3, gauges CH4–7) |
 
-Unit label (recorded, no PDF): Setra **2391-015WB1F23259NN** — ±15 inWC, excitation 22–30 VDC single supply, output ±2.5 VDC bipolar (standard 4-wire).
+Unit label (recorded, no PDF): Setra **2391-015WB1F23259NN** - ±15 inWC, excitation 22–30 VDC single supply, output ±2.5 VDC bipolar (standard 4-wire).
