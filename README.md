@@ -1,13 +1,25 @@
 # Wave Flume DAQ Panel
 
-> ### 📖 [Documentation site →](https://arl-at-uh.github.io/Wave_Flume_DAQ/)
-> The full Interface Control Document - every pinout, cable, terminal, and the grounding
-> rationale - lives at **<https://arl-at-uh.github.io/Wave_Flume_DAQ/>**
+<p align="center">
+  <img src="docs/panel.jpg" alt="The as-built DAQ panel: three DIN-rail rows with the USB-1608G, five supplies, color-coded terminal strips, and labeled M12 bulkheads" width="640">
+</p>
 
 DAQ panel for a laboratory wave flume: 4× Akamina AWP-24-3 wave-height
 gauges, 3× FUTEK LSB210 load cells (through IAA100 amplifiers at the flume), and a Setra 239
 differential pressure transducer - all eight channels **differential** into an MCC **USB-1608G**
 (16-bit), with three isolated power islands and M12 bulkhead connectors on a DIN-rail panel.
+
+## Documentation site
+
+The full **Interface Control Document** - every pinout, cable, terminal map, and the grounding
+rationale - is live at:
+
+### 📖 <https://arl-at-uh.github.io/Wave_Flume_DAQ/>
+
+GitHub Pages serves [`docs/index.html`](docs/index.html) directly - one self-contained page,
+no build step - and redeploys automatically on every push to `main`. Step-by-step bench
+procedures live in [`docs/procedures/`](docs/procedures/) and debugging guides in
+[`docs/debug/`](docs/debug/).
 
 ## Schematic
 
@@ -35,10 +47,3 @@ https://github.com/ARL-at-UH/Wave_Flume_DAQ/blob/main/kicad_schematic/wave_flume
 | [`docs/`](docs/) | Hosted ICD (`index.html`), step-by-step [`procedures/`](docs/procedures/), [`debug/`](docs/debug/) guides, schematic PDF, as-ordered BOM |
 | [`ref/`](ref/) | Primary sources: sensor/DAQ manufacturer manuals and drawings (indexed in its README) |
 | [`kicad_schematic/`](kicad_schematic/) | KiCad 9/10 project - schematic, project symbol library |
-
-## Project site
-
-The full **Interface Control Document** (pinouts, cable schedule, terminal maps, grounding
-rationale) is live at **<https://arl-at-uh.github.io/Wave_Flume_DAQ/>** - GitHub Pages serves
-[`docs/index.html`](docs/index.html) directly, one self-contained page with no build step.
-It redeploys automatically on every push to `main`.
