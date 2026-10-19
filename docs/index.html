@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wave Flume DAQ · Sensor Interface Document</title>
 </head>
 <body>
-<title>Wave Flume DAQ · Sensor Interface Document</title>
 <style>
   :root {
     --bg: #f4f7f6;
@@ -138,7 +138,43 @@
 
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+
+  html { scroll-behavior: smooth; }
+  h2, h3 { scroll-margin-top: 1.4rem; }
+  nav.toc {
+    display: none; position: fixed; top: 3rem;
+    left: max(1rem, calc(50% - 490px - 232px)); width: 200px;
+    font-size: 0.8rem; line-height: 1.35;
+  }
+  @media (min-width: 1460px) { nav.toc { display: block; } }
+  nav.toc .toc-title {
+    font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 0.5rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
+  nav.toc li { margin: 0; max-width: none; }
+  nav.toc a {
+    display: block; color: var(--muted); text-decoration: none;
+    padding: 0.28rem 0 0.28rem 0.8rem; border-left: 2px solid transparent; margin-left: -2px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc a.active { color: var(--accent); font-weight: 650; border-left-color: var(--accent); }
 </style>
+
+<nav class="toc" aria-label="Contents">
+  <p class="toc-title">Contents</p>
+  <ol>
+    <li><a href="#changes">Read first</a></li>
+    <li><a href="#overview">§1 · Interface overview</a></li>
+    <li><a href="#pinouts">§2 · Pinouts</a></li>
+    <li><a href="#cables">§3 · Cable schedule</a></li>
+    <li><a href="#terminals">§4 · Terminal blocks</a></li>
+    <li><a href="#panel">§5 · Panel layout</a></li>
+    <li><a href="#grounding">§6 · Grounding</a></li>
+    <li><a href="#bom">§7 · Bill of materials</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
 
 <main>
 <header class="doc">
@@ -152,7 +188,7 @@
 
 <!-- ============================================================ -->
 <p class="eyebrow">Read first</p>
-<h2>Three things the manuals changed</h2>
+<h2 id="changes">Three things the manuals changed</h2>
 
 <div class="callout">
   <span class="tag">Power — supply settings must change</span>
@@ -192,7 +228,7 @@
 
 <!-- ============================================================ -->
 <p class="eyebrow">§1 · System</p>
-<h2>Interface overview</h2>
+<h2 id="overview">Interface overview</h2>
 <p>Everything lands on DIN-rail terminal blocks first — sensors are field-replaceable without rewiring
 the DAQ. Every sensor detaches at a panel bulkhead connector, and every position is an M12 pair —
 a Phoenix push-lock plug on the field wires mating a TE receptacle whose 0.5 m pigtail runs into the box:
@@ -409,7 +445,7 @@ the 1608G's silkscreen shows single-ended names; the H/L names above apply once 
 
 <!-- ============================================================ -->
 <p class="eyebrow">§2 · Connector &amp; interface pinouts</p>
-<h2>Every mating surface, pin by pin</h2>
+<h2 id="pinouts">Every mating surface, pin by pin</h2>
 
 <h3>IF-A — Wave gauge connector (gauge ↔ cable W1–W4)</h3>
 <p>Each AWP-24-3 has a 6-pin circular bayonet receptacle, <strong>Amphenol PT02A10-6P</strong>. The mating
@@ -565,7 +601,7 @@ serves only the Setra case.</p>
 
 <!-- ============================================================ -->
 <p class="eyebrow">§3 · Cables</p>
-<h2>Cable schedule</h2>
+<h2 id="cables">Cable schedule</h2>
 <div class="tablewrap"><table>
   <thead><tr><th class="pin">ID</th><th>From</th><th>To</th><th>Cable</th><th>Terminations</th></tr></thead>
   <tbody>
@@ -585,11 +621,11 @@ serves only the Setra case.</p>
 
 <!-- ============================================================ -->
 <p class="eyebrow">§4 · DIN-rail terminals</p>
-<h2>Terminal block schedule</h2>
+<h2 id="terminals">Terminal block schedule</h2>
 <p>Feed-through screw/spring blocks on Rail A (power) and Rail C (signal). Adjacent same-bus terminals are
 linked with push-in jumper bars — one incoming feed serves the whole bus.</p>
 <p><strong>Every bulkhead's pigtail lands on its own 5-way strip first</strong> (TB-J1–TB-J8, terminal
-numbers = M12 contacts), then internal panel wires fan out to the buses and the DAQ — so a student wires
+numbers = M12 contacts), then internal panel wires fan out to the buses and the DAQ — so the installer wires
 one connector at a time, and the shunt leads park on their own terminals.
 <strong>Termination count:</strong> 76 feed-through ways in use — landings TB-J1–J8 (8×5 = 40), GND bus
 G1–G6 (6 — spare bus blocks removed from the strip), V1 bus A1–A10 (10), V2 bus B1–B10 (10), iso pair X1–X2 (2), AC mains groups L1–L4 + N1–N4 (8) — plus 2 fuse terminals (FA, FB)
@@ -662,7 +698,7 @@ FBS 4-5 3030187 ×3 — the 6-block GND bus is bridged with one FBS 5-5 + one FB
 
 <!-- ============================================================ -->
 <p class="eyebrow">§5 · Panel</p>
-<h2>Panel layout</h2>
+<h2 id="panel">Panel layout</h2>
 <figure>
 <svg viewBox="0 0 900 640" role="img" aria-label="Panel front view: bulkhead connectors on the left edge feed a vertical wire duct; three DIN rails carry power terminals with fuses and the isolated island supply, a spare rail, and the signal terminal blocks; the DAQ mounts lower right; supply and USB cables enter at the bottom edge." style="color: var(--ink);">
   <!-- panel -->
@@ -795,7 +831,7 @@ three-rail layout generalizes); keep ≥40 mm between duct and terminals for fin
 
 <!-- ============================================================ -->
 <p class="eyebrow">§6 · Grounding &amp; shields</p>
-<h2>One ground point: DAQ analog ground</h2>
+<h2 id="grounding">One ground point: DAQ analog ground</h2>
 <ul class="checklist">
   <li><strong>Single-point ground.</strong> Every power island references DAQ <code>AGND</code> exactly once,
   through the GND bus — gauges via their shields, the force rail via the A6 jumper, the Setra via −Out.
@@ -822,7 +858,7 @@ three-rail layout generalizes); keep ≥40 mm between duct and terminals for fin
 
 <!-- ============================================================ -->
 <p class="eyebrow">§7 · Bill of materials</p>
-<h2>Bill of materials</h2>
+<h2 id="bom">Bill of materials</h2>
 <p>Grouped by status. Example part numbers marked <em>verify</em> are common catalog items given as a
 starting point — confirm against the distributor listing before ordering; the spec column is the
 requirement. A machine-readable copy lives at <code>docs/BOM.csv</code> in the project repo.</p>
@@ -925,7 +961,7 @@ are the biggest line item.</p>
 
 <!-- ============================================================ -->
 <p class="eyebrow">Appendix</p>
-<h2>Sources</h2>
+<h2 id="sources">Sources</h2>
 <ul class="src">
   <li>Akamina AWP-24-3 User's Guide, Brochure, AWPC-01 Assembly Procedure, AWP-24 System Diagram, and
   "Acquiring Minimum Noise Data" app note — akamina.com; AWP-24-3 guide copy in <code>ref/</code></li>
@@ -936,9 +972,23 @@ are the biggest line item.</p>
 <p class="src">Rev A 2026-08-10; BOM added 2026-09-09; Rev B 2026-09-15 (self-powered panel, landing-strip
 terminal architecture, color-coded UT blocks); Rev C 2026-10-15/16 (DAQ corrected to USB-1608G; as-built channels gauges CH0–3 / force CH4–6 / pressure CH7, pairs white-blue (HI-LO) and yellow-green, all eight
 channels differential, green = signal-LO wiring, A6 ground-reference jumper, net names GND_24/GND_12/GND_24ISO + <sensor>_H/_L, TE screw-terminal plugs,
-VEVOR enclosure + aluminum rails). Channel assignments follow the original DAQ_Sketch.pdf
-(force CH0–2, pressure CH3, gates CH4–7).</p>
+VEVOR enclosure + aluminum rails). The as-built channel assignments above supersede the original
+DAQ_Sketch.pdf plan (which had force CH0–2, pressure CH3, gauges CH4–7).</p>
 </main>
+
+<script>
+(() => {
+  const links = [...document.querySelectorAll('nav.toc a')];
+  const heads = links.map(a => document.getElementById(a.hash.slice(1)));
+  const update = () => {
+    let i = -1;
+    heads.forEach((h, j) => { if (h && h.getBoundingClientRect().top < 120) i = j; });
+    links.forEach((a, j) => a.classList.toggle('active', j === Math.max(i, 0)));
+  };
+  addEventListener('scroll', update, { passive: true });
+  update();
+})();
+</script>
 
 
 
