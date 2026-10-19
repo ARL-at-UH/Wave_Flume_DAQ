@@ -178,7 +178,7 @@
 
 <main>
 <header class="doc">
-  <p class="doc-id">Interface Control Document · Rev C · 2026-10-15</p>
+  <p class="doc-id">Interface Control Document · Rev D · 2026-10-19</p>
   <h1>Wave Flume DAQ - Sensor Interfaces, Cabling &amp; Panel Layout</h1>
   <p class="subtitle">Eight analog sensors (4 wave-height gauges, 3 load cells, 1 differential pressure
   transducer) into one MCC USB-1608G - 16-bit, all eight channels differential - with signal conditioning, power distribution, and DIN-rail
@@ -278,19 +278,19 @@ bench supply leads and USB enter through glands.</p>
   <!-- load cells -->
   <g>
     <rect x="16" y="282" width="148" height="38" rx="6" fill="none" stroke="currentColor"/>
-    <text x="26" y="298" font-size="12" font-weight="600">Load cell F1</text>
+    <text x="26" y="298" font-size="12" font-weight="600">Load cell LC1</text>
     <text x="26" y="313" font-size="11" fill="var(--muted)">FUTEK LSB210 · 10 lb</text>
     <rect x="16" y="332" width="148" height="38" rx="6" fill="none" stroke="currentColor"/>
-    <text x="26" y="348" font-size="12" font-weight="600">Load cell F2</text>
+    <text x="26" y="348" font-size="12" font-weight="600">Load cell LC2</text>
     <text x="26" y="363" font-size="11" fill="var(--muted)">FUTEK LSB210 · 10 lb</text>
     <rect x="16" y="382" width="148" height="38" rx="6" fill="none" stroke="currentColor"/>
-    <text x="26" y="398" font-size="12" font-weight="600">Load cell F3</text>
+    <text x="26" y="398" font-size="12" font-weight="600">Load cell LC3</text>
     <text x="26" y="413" font-size="11" fill="var(--muted)">FUTEK LSB210 · 10 lb</text>
   </g>
 
   <!-- pressure -->
   <rect x="16" y="470" width="148" height="38" rx="6" fill="none" stroke="currentColor"/>
-  <text x="26" y="486" font-size="12" font-weight="600">Pressure PS1</text>
+  <text x="26" y="486" font-size="12" font-weight="600">Pressure PT1</text>
   <text x="26" y="501" font-size="11" fill="var(--muted)">Setra 239 · ±2.5 V</text>
 
   <!-- bulkheads P1-P4 -->
@@ -377,10 +377,10 @@ bench supply leads and USB enter through glands.</p>
     <text x="716" y="212">CH1 H/L  4/5   ← WG2 ±</text>
     <text x="716" y="232">CH2 H/L  7/8   ← WG3 ±</text>
     <text x="716" y="252">CH3 H/L 10/11  ← WG4 ±</text>
-    <text x="716" y="272">CH4 H/L 38/37  ← F1 ±</text>
-    <text x="716" y="292">CH5 H/L 35/34  ← F2 ±</text>
-    <text x="716" y="312">CH6 H/L 32/31  ← F3 ±</text>
-    <text x="716" y="332">CH7 H/L 29/28  ← PS1 ±</text>
+    <text x="716" y="272">CH4 H/L 38/37  ← LC1 ±</text>
+    <text x="716" y="292">CH5 H/L 35/34  ← LC2 ±</text>
+    <text x="716" y="312">CH6 H/L 32/31  ← LC3 ±</text>
+    <text x="716" y="332">CH7 H/L 29/28  ← PT1 ±</text>
     <text x="716" y="360">AGND pins 12 · 39</text>
     <text x="716" y="378">← GND-bus drops + shields</text>
   </g>
@@ -434,14 +434,14 @@ into the USB-1608G as twisted pairs - white/blue (HI/LO) for gauges and pressure
     <tr><td class="pin">CH1</td><td class="pin">4</td><td class="pin">5</td><td>WG2 signal high / low</td><td>±10 V</td></tr>
     <tr><td class="pin">CH2</td><td class="pin">7</td><td class="pin">8</td><td>WG3 signal high / low</td><td>±10 V</td></tr>
     <tr><td class="pin">CH3</td><td class="pin">10</td><td class="pin">11</td><td>WG4 signal high / low</td><td>±10 V</td></tr>
-    <tr><td class="pin">CH4</td><td class="pin">38</td><td class="pin">37</td><td>F1 via IAA-1 Vout / OutGnd (yellow / green)</td><td>±10 V (10 lb FS)</td></tr>
-    <tr><td class="pin">CH5</td><td class="pin">35</td><td class="pin">34</td><td>F2 via IAA-2 Vout / OutGnd</td><td>±10 V</td></tr>
-    <tr><td class="pin">CH6</td><td class="pin">32</td><td class="pin">31</td><td>F3 via IAA-3 Vout / OutGnd</td><td>±10 V</td></tr>
-    <tr><td class="pin">CH7</td><td class="pin">29</td><td class="pin">28</td><td>PS1 Setra 239 +Out / −Out (white / blue)</td><td>±5 V (output ±2.5 V = ±15 inWC)</td></tr>
+    <tr><td class="pin">CH4</td><td class="pin">38</td><td class="pin">37</td><td>LC1 via IAA-1 Vout / OutGnd (yellow / green)</td><td>±10 V (10 lb FS)</td></tr>
+    <tr><td class="pin">CH5</td><td class="pin">35</td><td class="pin">34</td><td>LC2 via IAA-2 Vout / OutGnd</td><td>±10 V</td></tr>
+    <tr><td class="pin">CH6</td><td class="pin">32</td><td class="pin">31</td><td>LC3 via IAA-3 Vout / OutGnd</td><td>±10 V</td></tr>
+    <tr><td class="pin">CH7</td><td class="pin">29</td><td class="pin">28</td><td>PT1 Setra 239 +Out / −Out (white / blue)</td><td>±5 V (output ±2.5 V = ±15 inWC)</td></tr>
   </tbody>
 </table></div>
 <p class="src">Channel order as installed: gauges CH0–CH3, force CH4–CH6, pressure CH7. AGND reference drops: GND bus → pins 12 and 39. Wire by terminal <em>number</em> -
-the 1608G's silkscreen shows single-ended names; the H/L names above apply once InstaCal is set to differential mode. Net names on the schematic follow the same convention: <code>F1_H/F1_L</code>, <code>PS1_H/PS1_L</code>, <code>WG1_H/WG1_L</code> … <code>WG4_H/WG4_L</code>; grounds are <code>GND_24</code> (force), <code>GND_12</code> (gauges), <code>GND_24ISO</code> (Setra island), <code>AGND</code> (measurement reference).</p>
+the 1608G's silkscreen shows single-ended names; the H/L names above apply once InstaCal is set to differential mode. Net names on the schematic follow the same convention: <code>LC1_H/LC1_L</code>, <code>PT1_H/PT1_L</code>, <code>WG1_H/WG1_L</code> … <code>WG4_H/WG4_L</code>; grounds are <code>GND_24</code> (force), <code>GND_12</code> (gauges), <code>GND_24ISO</code> (Setra island), <code>AGND</code> (measurement reference).</p>
 
 <!-- ============================================================ -->
 <p class="eyebrow">§2 · Connector &amp; interface pinouts</p>
@@ -449,19 +449,18 @@ the 1608G's silkscreen shows single-ended names; the H/L names above apply once 
 
 <h3>IF-A - Wave gauge connector (gauge ↔ cable W1–W4)</h3>
 <p>Each AWP-24-3 has a 6-pin circular bayonet receptacle, <strong>Amphenol PT02A10-6P</strong>. The mating
-cable plug <strong>PT06E-10-6S (AWPC-01)</strong> ships with each gauge. Run W1–W4 as a <strong>twisted bundle of five single 20 AWG stranded wires</strong> - orange, white
-and three blacks (ring-mark the blacks E/C/D at both ends before pulling). Twist the white signal wire
-tightly with its black return the whole way: that pair replaces the shielded pair Akamina recommends,
-so keep the runs as short as practical.</p>
+cable plug <strong>PT06E-10-6S (AWPC-01)</strong> ships with each gauge. As built, W1–W4 are
+<strong>2-pair shielded instrumentation cable</strong> (Belden 8723 style - the construction Akamina
+recommends): red + black pair = power, green + white pair = signal, plus the shield drain.</p>
 <div class="tablewrap"><table>
-  <thead><tr><th class="pin">Pin</th><th>Belden 8723 conductor</th><th>Function</th><th>Lands on</th></tr></thead>
+  <thead><tr><th class="pin">Pin</th><th>Cable conductor (as built)</th><th>Function</th><th>Lands on</th></tr></thead>
   <tbody>
     <tr><td class="pin">A</td><td> - </td><td>No connection</td><td> - </td></tr>
-    <tr><td class="pin">B</td><td><span class="wire w-white"></span>White</td><td>Output signal high</td><td>TB-J1..4 term 3 → DAQ CH0H–CH3H</td></tr>
-    <tr><td class="pin">C</td><td><span class="wire w-black"></span>Black (mark "C")</td><td>Output signal low</td><td>TB-J1..4 term 4 → DAQ CH0L–CH3L</td></tr>
-    <tr><td class="pin">D</td><td><span class="wire w-black"></span>Black (mark "D")</td><td>Shield-substitute wire</td><td>TB-J1..4 term 5 → GND bus (panel end only)</td></tr>
-    <tr><td class="pin">E</td><td><span class="wire w-black"></span>Black (mark "E")</td><td>Power low</td><td>TB-PWR 0V-B bus</td></tr>
-    <tr><td class="pin">F</td><td><span class="wire w-yellow" style="background:#e8940c"></span>Orange</td><td>Power high (+12 V)</td><td>TB-PWR +12 V bus</td></tr>
+    <tr><td class="pin">B</td><td><span class="wire w-green"></span>Green (signal pair)</td><td>Output signal high</td><td>TB-J1..4 term 2 → DAQ CH0H–CH3H</td></tr>
+    <tr><td class="pin">C</td><td><span class="wire w-white"></span>White (signal pair)</td><td>Output signal low</td><td>TB-J1..4 term 3 → DAQ CH0L–CH3L</td></tr>
+    <tr><td class="pin">D</td><td><span class="wire w-shield"></span>Shield drain</td><td>Shield</td><td>TB-J1..4 term 5 → GND bus (panel end only)</td></tr>
+    <tr><td class="pin">E</td><td><span class="wire w-black"></span>Black (power pair)</td><td>Power low</td><td>TB-J1..4 term 4 → V2 bus 0V-B</td></tr>
+    <tr><td class="pin">F</td><td><span class="wire w-red"></span>Red (power pair)</td><td>Power high (+12 V)</td><td>TB-J1..4 term 1 → +12 V bus</td></tr>
   </tbody>
 </table></div>
 
@@ -471,17 +470,17 @@ field-wireable M12 <strong>B-coded</strong> plug - unshielded plastic body, scre
 PG9 gland (heat-shrink the twisted bundle where the gland clamps - it seals on a round cable, ~6–8 mm).
 It mates panel receptacle <strong>J1/J2/J3/J4</strong>, a <strong>TE T4171010405-002</strong> (M12 B-code 5-pos
 male, rear-mount, 0.5 m pigtail) whose leads land on the DIN rails. <strong>B-coding is the keying:</strong>
-these four cannot be plugged into the A-coded J5–J8, and vice versa. The shield-substitute drain rides
+these four cannot be plugged into the A-coded J5–J8, and vice versa. The cable drain rides
 contact 5, so the shield grounds only at the GND bus (Akamina's single-point rule) - the plastic plug has
 no shell to terminate.</p>
 <div class="tablewrap"><table>
-  <thead><tr><th class="pin">M12 contact</th><th>From gauge contact</th><th>Single wire (cable side)</th><th>TE pigtail (panel side)*</th><th>Function → lands on</th></tr></thead>
+  <thead><tr><th class="pin">M12 contact</th><th>From gauge contact</th><th>Cable conductor</th><th>TE pigtail (panel side)*</th><th>Function → lands on</th></tr></thead>
   <tbody>
-    <tr><td class="pin">1</td><td class="pin">F</td><td><span class="wire w-yellow" style="background:#e8940c"></span>Orange</td><td><span class="wire w-brown"></span>Brown</td><td>Power high +12 V → TB-J1..4 term 1 → V2 bus (B2–B5)</td></tr>
-    <tr><td class="pin">2</td><td class="pin">E</td><td><span class="wire w-black"></span>Black "E"</td><td><span class="wire w-white"></span>White</td><td>Power low → TB-J1..4 term 2 → V2 bus 0V-B (B7–B10)</td></tr>
-    <tr><td class="pin">3</td><td class="pin">B</td><td><span class="wire w-white"></span>White</td><td><span class="wire w-blue"></span>Blue</td><td>Signal high → TB-J1..4 term 3 → white wire → DAQ CH0H–CH3H (pins 1/4/7/10)</td></tr>
-    <tr><td class="pin">4</td><td class="pin">C</td><td><span class="wire w-black"></span>Black "C"</td><td><span class="wire w-black"></span>Black</td><td>Signal low → TB-J1..4 term 4 → blue wire → DAQ CH0L–CH3L (pins 2/5/8/11)</td></tr>
-    <tr><td class="pin">5</td><td class="pin">D</td><td><span class="wire w-black"></span>Black "D"</td><td><span class="wire w-gray"></span>Gray</td><td>Shield → TB-J1..4 term 5 → GND bus (panel end only; not on the shell)</td></tr>
+    <tr><td class="pin">1</td><td class="pin">F</td><td><span class="wire w-red"></span>Red</td><td><span class="wire w-brown"></span>Brown</td><td>Power high +12 V → TB-J1..4 term 1 → yellow wire → V2 bus (B2–B5)</td></tr>
+    <tr><td class="pin">2</td><td class="pin">B</td><td><span class="wire w-green"></span>Green</td><td><span class="wire w-white"></span>White</td><td>Signal high → TB-J1..4 term 2 → white wire → DAQ CH0H–CH3H (pins 1/4/7/10)</td></tr>
+    <tr><td class="pin">3</td><td class="pin">C</td><td><span class="wire w-white"></span>White</td><td><span class="wire w-blue"></span>Blue</td><td>Signal low → TB-J1..4 term 3 → blue wire → DAQ CH0L–CH3L (pins 2/5/8/11)</td></tr>
+    <tr><td class="pin">4</td><td class="pin">E</td><td><span class="wire w-black"></span>Black</td><td><span class="wire w-black"></span>Black</td><td>Power low → TB-J1..4 term 4 → black wire → V2 bus 0V-B (B7–B10)</td></tr>
+    <tr><td class="pin">5</td><td class="pin">D</td><td><span class="wire w-shield"></span>Drain</td><td><span class="wire w-gray"></span>Gray</td><td>Shield → TB-J1..4 term 5 → GND bus (panel end only; not on the shell)</td></tr>
   </tbody>
 </table></div>
 <p class="src">* Standard M12 5-wire color code - verify against the insert supplied with the TE pigtail.
@@ -510,16 +509,17 @@ FUTEK wiring code WC1:</p>
 <p>Each amp's power/output block connects by a 5-conductor shielded cable (W12–W14, 20–24 AWG) to a
 <strong>TE T4110001051-000</strong> A-code screw-terminal plug (unshielded, PG7 gland), mating panel receptacle
 <strong>J5/J6/J7</strong> (<strong>TE T4171010005-002</strong>, 0.5 m pigtail into the box). The M12
-contacts mirror the IAA100 power-side pins 1-for-1, and the shunt-cal line comes along for free on
-contact 3:</p>
+contacts follow the panel's common as-built scheme (1 = power+, 2 = signal HI, 3 = signal LO,
+4 = power−, 5 = shunt), so the amp pins cross over inside the cable - conductors as built:
+red +VIN, white VOUT, blue OUT_GND, black PWR_GND, orange SHUNT:</p>
 <div class="tablewrap"><table>
   <thead><tr><th class="pin">IAA100 pin</th><th>Function</th><th class="pin">M12 contact</th><th>TE pigtail (panel side)*</th><th>Lands on</th></tr></thead>
   <tbody>
-    <tr><td class="pin">1</td><td>+Vin</td><td class="pin">1</td><td><span class="wire w-brown"></span>Brown</td><td>TB-J5..7 term 1 → V1 bus +24 V (A2–A4)</td></tr>
-    <tr><td class="pin">2</td><td>Ground (power)</td><td class="pin">2</td><td><span class="wire w-white"></span>White</td><td>TB-J5..7 term 2 → V1 bus 0V-A (A7–A9)</td></tr>
-    <tr><td class="pin">3</td><td>Shunt trigger (5–26 V activates shunt cal)</td><td class="pin">3</td><td><span class="wire w-blue"></span>Blue</td><td>TB-J5..7 term 3, back side empty - touch to +24 V momentarily for shunt check</td></tr>
-    <tr><td class="pin">4</td><td>Ground (output)</td><td class="pin">4</td><td><span class="wire w-black"></span>Black</td><td>TB-J5..7 term 4 → green wire → DAQ CH4L–CH6L (pins 37/34/31)</td></tr>
-    <tr><td class="pin">5</td><td>Vout (±10 V, referenced to OutGnd)</td><td class="pin">5</td><td><span class="wire w-gray"></span>Gray</td><td>TB-J5..7 term 5 → yellow wire → DAQ CH4H–CH6H (pins 38/35/32)</td></tr>
+    <tr><td class="pin">1</td><td>+Vin (red)</td><td class="pin">1</td><td><span class="wire w-brown"></span>Brown</td><td>TB-J5..7 term 1 → red wire → V1 bus +24 V (A2–A4)</td></tr>
+    <tr><td class="pin">5</td><td>Vout ±10 V, referenced to OutGnd (white)</td><td class="pin">2</td><td><span class="wire w-white"></span>White</td><td>TB-J5..7 term 2 → yellow wire → DAQ CH4H–CH6H (pins 38/35/32)</td></tr>
+    <tr><td class="pin">4</td><td>Ground (output) (blue)</td><td class="pin">3</td><td><span class="wire w-blue"></span>Blue</td><td>TB-J5..7 term 3 → green wire → DAQ CH4L–CH6L (pins 37/34/31)</td></tr>
+    <tr><td class="pin">2</td><td>Ground (power) (black)</td><td class="pin">4</td><td><span class="wire w-black"></span>Black</td><td>TB-J5..7 term 4 → black wire → V1 bus 0V-A (A7–A9)</td></tr>
+    <tr><td class="pin">3</td><td>Shunt trigger, 5–26 V activates shunt cal (orange)</td><td class="pin">5</td><td><span class="wire w-gray"></span>Gray</td><td>TB-J5..7 term 5, back side empty - touch to +24 V momentarily for shunt check. <strong>Relabel the strip: the printed "5-GRY-SHLD" is wrong - this is the SHUNT</strong></td></tr>
   </tbody>
 </table></div>
 <p class="src">* Standard M12 5-wire color code (1 BN / 2 WH / 3 BU / 4 BK / 5 GY) - verify against the
@@ -532,8 +532,8 @@ wiring is complete (FUTEK warns against hot-plugging the supply).</p>
 <h3>IF-E - Pressure transducer flying leads (Setra 239)</h3>
 <p>The 239 has a captive cable with one of two factory color codes - check yours against both columns.
 It plugs in at panel connector <strong>J8</strong> - the same TE T4110001051-000 plug + TE
-T4171010005-002 receptacle pair as J5–J7 (contacts: 1 = +Exc, 2 = −Exc, 3 = +Out, 4 = −Out,
-5 = shield/case). <strong>Because J8 is physically identical to the amp jacks J5–J7, label all four
+T4171010005-002 receptacle pair as J5–J7 (contacts as built: 1 = +Exc, 2 = +Out, 3 = −Out, 4 = −Exc,
+5 = shield/case - the same 1 PWR+ / 2 HI / 3 LO / 4 PWR− scheme as every other bulkhead). <strong>Because J8 is physically identical to the amp jacks J5–J7, label all four
 unmistakably</strong> - cross-plugging misroutes the 24 V domains (iso-module overload or a grounded
 Setra excitation). The B-coded gauge connectors J1–J4 cannot cross-mate with any of these. A true 4-terminal network: <strong>keep −Exc and −Out on separate conductors
 all the way to their buses.</strong> The Setra manual explicitly supports differential readout (its multi-hookup Option 1), which is how CH7 now reads it.</p>
@@ -541,9 +541,9 @@ all the way to their buses.</strong> The Setra manual explicitly supports differ
   <thead><tr><th>Function</th><th>Termination Y1/Y4/Y6</th><th>Termination 02/10/25</th><th>Connects to</th></tr></thead>
   <tbody>
     <tr><td>+Excitation (24 V)</td><td><span class="wire w-white"></span>White</td><td><span class="wire w-red"></span>Red</td><td>J8-1 → <span class="wire w-brown"></span>BN pigtail → TB-J8:1 → X1 (+24V_C)</td></tr>
-    <tr><td>−Excitation</td><td><span class="wire w-black"></span>Black</td><td><span class="wire w-black"></span>Black</td><td>J8-2 → <span class="wire w-white"></span>WH pigtail → TB-J8:2 → X2 (GND_24ISO - floats, nowhere else)</td></tr>
-    <tr><td>+Output</td><td><span class="wire w-yellow"></span>Yellow</td><td><span class="wire w-green"></span>Green</td><td>J8-3 → <span class="wire w-blue"></span>BU pigtail → TB-J8:3 → white wire → DAQ CH7H (pin 29)</td></tr>
-    <tr><td>−Output</td><td><span class="wire w-brown"></span>Brown</td><td><span class="wire w-white"></span>White</td><td>J8-4 → <span class="wire w-black"></span>BK pigtail → TB-J8:4 → blue wire → DAQ CH7L (pin 28) <em>and</em> black wire → GND bus (the island's single reference - keep both)</td></tr>
+    <tr><td>−Excitation</td><td><span class="wire w-black"></span>Black</td><td><span class="wire w-black"></span>Black</td><td>J8-4 → <span class="wire w-black"></span>BK pigtail → TB-J8:4 → X2 (GND_24ISO - floats, nowhere else)</td></tr>
+    <tr><td>+Output</td><td><span class="wire w-yellow"></span>Yellow</td><td><span class="wire w-green"></span>Green</td><td>J8-2 → <span class="wire w-white"></span>WH pigtail → TB-J8:2 → white wire → DAQ CH7H (pin 29)</td></tr>
+    <tr><td>−Output</td><td><span class="wire w-brown"></span>Brown</td><td><span class="wire w-white"></span>White</td><td>J8-3 → <span class="wire w-blue"></span>BU pigtail → TB-J8:3 → blue wire → DAQ CH7L (pin 28) <em>and</em> a wire → GND bus G5 (the island's single reference - keep both)</td></tr>
     <tr><td>Shield</td><td colspan="2"><span class="wire w-shield"></span>Shield = case (both variants)</td><td>J8-5 → <span class="wire w-gray"></span>GY pigtail → TB-J8:5 → panel earth stud (case must be earthed)</td></tr>
   </tbody>
 </table></div>
@@ -590,7 +590,11 @@ number in each gauge pair.</p>
     <tr><td>A3 · HDR-15-24 (mains → 24 V, Class II floating)</td><td>24 V / 0.63 A</td><td>X1–X2 → Setra excitation ONLY</td><td>~10 mA</td></tr>
   </tbody>
 </table></div>
-<p>All three outputs are floating by construction (all three supplies are Class II HDRs) - no output-to-earth
+<p>As built, five supplies sit on the middle rail row: the three active ones above plus a mounted
+<strong>12 V spare</strong> and <strong>24 V spare</strong> beside them (AC-fed, outputs unwired - swap wires over
+if a unit dies). The DC-side fuse labels on the panel read 12 V: 0.5 A, 24 V: 0.25 A, 24 V-ISO: 0.2 A -
+note this differs from the FA/FB plan in §7 (verify against the installed cartridges).
+All outputs are floating by construction (Class II HDRs) - no output-to-earth
 straps anywhere. Each rail still ends up referenced to DAQ analog ground exactly once: the 24 V rail
 through the blue A6 → GND-bus jumper (added for differential mode - the amps' OutGnds are now CH4L–CH6L
 inputs), the 12 V rail through the gauges' internal power-low-to-shield bond, and A3's output only
@@ -605,10 +609,10 @@ serves only the Setra case.</p>
 <div class="tablewrap"><table>
   <thead><tr><th class="pin">ID</th><th>From</th><th>To</th><th>Cable</th><th>Terminations</th></tr></thead>
   <tbody>
-    <tr><td class="pin">W1–W4</td><td>WG1–4 (Amphenol receptacle)</td><td>Panel J1–J4</td><td>Twisted bundle of 5× 20 AWG single wires (org + wht + 3× blk marked E/C/D) · length per gauge station · twist wht with blk-C</td><td>AWPC-01 (PT06E-10-6S) plug at the gauge end; Phoenix M12 B-code push-lock plug at the panel end</td></tr>
-    <tr><td class="pin">W5–W7</td><td>F1–F3 load cells</td><td>IAA100 sensor block (at the flume)</td><td>Integral 29 AWG 4-cond spiral-shield silicone, 5 ft (submersible)</td><td>Bare leads into the IAA 4-pos sensor block (fold/tin the 29 AWG leads)</td></tr>
-    <tr><td class="pin">W12–W14</td><td>IAA-1…3 power/output block</td><td>Panel connectors J5–J7 → TB-PWR / TB-SIG</td><td>Twisted bundle of 5× 20 AWG single wires (red + blk + yel + blk + wht), length per amp station</td><td>Ferrules at the amp block; Phoenix M12 push-lock plug at the panel end</td></tr>
-    <tr><td class="pin">W8</td><td>PS1 Setra 239</td><td>Panel connector J8 → TB-SIG / TB-X</td><td>Integral cable, 2 ft - mount PS1 within reach or splice single wires at a junction block</td><td>Phoenix M12 push-lock plug; TE pigtail to TB-X / TB-SIG; GY shield lead to earth stud</td></tr>
+    <tr><td class="pin">W1–W4</td><td>WG1–4 (Amphenol receptacle)</td><td>Panel J1–J4</td><td>2-pair shielded instrumentation cable, Belden 8723 style (red/blk pair = power, grn/wht pair = signal, drain) · length per gauge station</td><td>AWPC-01 (PT06E-10-6S) plug at the gauge end; TE B-code screw-terminal plug at the panel end</td></tr>
+    <tr><td class="pin">W5–W7</td><td>LC1–LC3 load cells</td><td>IAA100 sensor block (at the flume)</td><td>Integral 29 AWG 4-cond spiral-shield silicone, 5 ft (submersible)</td><td>Bare leads into the IAA 4-pos sensor block (fold/tin the 29 AWG leads)</td></tr>
+    <tr><td class="pin">W12–W14</td><td>IAA-1…3 power/output block</td><td>Panel connectors J5–J7 → TB-PWR / TB-SIG</td><td>5-conductor, as built: red +VIN · wht VOUT · blu OUT_GND · blk PWR_GND · org SHUNT; length per amp station</td><td>Ferrules at the amp block; TE A-code screw-terminal plug at the panel end</td></tr>
+    <tr><td class="pin">W8</td><td>PT1 Setra 239</td><td>Panel connector J8 → TB-SIG / TB-X</td><td>Integral cable, 2 ft - mount PT1 within reach or splice single wires at a junction block</td><td>Phoenix M12 push-lock plug; TE pigtail to TB-X / TB-SIG; GY shield lead to earth stud</td></tr>
     <tr><td class="pin">W9</td><td>Wall outlet</td><td>J9 IEC C14 inlet (switched + fused)</td><td>Standard C13 computer cord</td><td>Inlet L/N → TB14 jumpered groups → the three HDR supplies; PE → earth stud</td></tr>
     <tr><td class="pin">W11</td><td>DAQ</td><td>Lab PC</td><td>USB 2.0 A–B</td><td>PC's A–B cable into the exterior jack of the Adafruit 4216 panel feed-through; its 30 cm tail plugs into the DAQ's USB-B port</td></tr>
   </tbody>
@@ -622,7 +626,8 @@ serves only the Setra case.</p>
 <!-- ============================================================ -->
 <p class="eyebrow">§4 · DIN-rail terminals</p>
 <h2 id="terminals">Terminal block schedule</h2>
-<p>Feed-through screw/spring blocks on Rail A (power) and Rail C (signal). Adjacent same-bus terminals are
+<p>Feed-through screw blocks across the three as-built rail rows (§5): landings + AC entry on TB ROW 1,
+buses + supplies on TB ROW 2, DAQ on TB ROW 3. Adjacent same-bus terminals are
 linked with push-in jumper bars - one incoming feed serves the whole bus.</p>
 <p><strong>Every bulkhead's pigtail lands on its own 5-way strip first</strong> (TB-J1–TB-J8, terminal
 numbers = M12 contacts), then internal panel wires fan out to the buses and the DAQ - so the installer wires
@@ -630,9 +635,10 @@ one connector at a time, and the shunt leads park on their own terminals.
 <strong>Termination count:</strong> 76 feed-through ways in use - landings TB-J1–J8 (8×5 = 40), GND bus
 G1–G6 (6 - spare bus blocks removed from the strip), V1 bus A1–A10 (10), V2 bus B1–B10 (10), iso pair X1–X2 (2), AC mains groups L1–L4 + N1–N4 (8) - plus 2 fuse terminals (FA, FB)
 and ~20% spares. <strong>Blocks are Phoenix UT 2,5 screw-clamp, color-coded by function</strong> (all order numbers
-verified on phoenixcontact.com) - RED 3045062 = +24 V, ORANGE 3045046 = +12 V, BLACK 3045088 = power
-grounds, BLUE 3044089 = AGND, YELLOW 3045059 = the GND_24ISO island (never bus yellow to anything),
-WHITE 3045075 = signals, GRAY 3044076 = the AC L/N groups - so block color = the wire color landing on
+verified on phoenixcontact.com) - RED 3045062 = +24 V, YELLOW 3045059 = +12 V, BLACK 3045088 = power
+grounds, BLUE 3044089 = AGND, ORANGE 3045046 = the GND_24ISO island (never bus orange to anything),
+WHITE 3045075 = signals, GRAY 3044076 = the AC L/N groups. (As built the installer swapped the planned
+orange/yellow roles: yellow = 12 V, orange = Setra iso island - wire colors follow the same scheme) - so block color = the wire color landing on
 it, and never use green/yellow-striped PE blocks (they bond to the rail). Ferrule every stranded
 conductor - screw clamps reward them.
 <strong>Quantities rounded up to the nearest 5 with spares: 115 blocks total (10 red, 15 orange,
@@ -652,14 +658,14 @@ FBS 4-5 3030187 ×3 - the 6-block GND bus is bridged with one FBS 5-5 + one FBS 
     <tr><td class="pin">A5</td><td>+24 V</td><td>spare bus position</td></tr>
     <tr class="group"><td colspan="3">0V-A bus</td></tr>
     <tr><td class="pin">A6</td><td>0V-A</td><td>A2 HDR-15-24 −V + <strong>blue reference jumper → GND bus</strong> (the force island's single AGND reference - required in differential mode)</td></tr>
-    <tr><td class="pin">A7–A9</td><td>0V-A</td><td>J5–J7 pigtail white → IAA-1/2/3 power gnd</td></tr>
+    <tr><td class="pin">A7–A9</td><td>0V-A</td><td>J5–J7 pigtail black (term 4) → IAA-1/2/3 power gnd</td></tr>
     <tr><td class="pin">A10</td><td>0V-A</td><td>spare bus position</td></tr>
     <tr class="group"><td colspan="3">+12 V bus - fed via fuse FB (0.25 A) from A4 HDR-15-12</td></tr>
     <tr><td class="pin">B1</td><td>+12 V</td><td>A4 HDR-15-12 +V (through fuse terminal FB)</td></tr>
     <tr><td class="pin">B2–B5</td><td>+12 V</td><td>J1–J4 pigtail brown (gauge power high)</td></tr>
     <tr class="group"><td colspan="3">0V-B bus</td></tr>
     <tr><td class="pin">B6</td><td>0V-B</td><td>A4 HDR-15-12 −V</td></tr>
-    <tr><td class="pin">B7–B10</td><td>0V-B</td><td>J1–J4 pigtail white (gauge power low)</td></tr>
+    <tr><td class="pin">B7–B10</td><td>0V-B</td><td>J1–J4 pigtail black (term 4, gauge power low)</td></tr>
     <tr class="group"><td colspan="3">GND_24ISO domain - isolated 24 V for the Setra (NEVER jumper to GND_24, GND_12, or the GND bus)</td></tr>
     <tr><td class="pin">X1</td><td>+24V_C</td><td>A3 HDR-15-24 +V → Setra +Exc</td></tr>
     <tr><td class="pin">X2</td><td>GND_24ISO</td><td>A3 HDR-15-24 −V → Setra −Exc</td></tr>
@@ -674,23 +680,23 @@ FBS 4-5 3030187 ×3 - the 6-block GND bus is bridged with one FBS 5-5 + one FBS 
   <thead><tr><th class="pin">Group</th><th class="pin">Term</th><th>Pigtail in (from bulkhead)</th><th>Internal wire out (to destination)</th></tr></thead>
   <tbody>
     <tr class="group"><td colspan="4">TB-J1 … TB-J4 - wave gauge landings (5 ways each)</td></tr>
-    <tr><td class="pin">TB-J1–4</td><td class="pin">1</td><td>Brown = gauge power high</td><td>Orange wire → V2 bus +12 V (B2–B5)</td></tr>
-    <tr><td class="pin"></td><td class="pin">2</td><td>White = gauge power low</td><td>Black wire → V2 bus 0V-B (B7–B10)</td></tr>
-    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = gauge signal high</td><td>White wire → DAQ terminals 1 / 4 / 7 / 10 (CH0H–CH3H)</td></tr>
-    <tr><td class="pin"></td><td class="pin">4</td><td>Black = gauge signal low</td><td>Blue wire → DAQ terminals 2 / 5 / 8 / 11 (CH0L–CH3L)</td></tr>
-    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = shield</td><td>Black wire → GND bus</td></tr>
+    <tr><td class="pin">TB-J1–4</td><td class="pin">1</td><td>Brown = gauge power high</td><td>Yellow wire → V2 bus +12 V (B2–B5)</td></tr>
+    <tr><td class="pin"></td><td class="pin">2</td><td>White = gauge signal high</td><td>White wire → DAQ terminals 1 / 4 / 7 / 10 (CH0H–CH3H)</td></tr>
+    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = gauge signal low</td><td>Blue wire → DAQ terminals 2 / 5 / 8 / 11 (CH0L–CH3L)</td></tr>
+    <tr><td class="pin"></td><td class="pin">4</td><td>Black = gauge power low</td><td>Black wire → V2 bus 0V-B (B7–B10)</td></tr>
+    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = shield</td><td>Wire → GND bus G1–G4</td></tr>
     <tr class="group"><td colspan="4">TB-J5 … TB-J7 - amplifier landings (5 ways each)</td></tr>
     <tr><td class="pin">TB-J5–7</td><td class="pin">1</td><td>Brown = amp +Vin</td><td>Red wire → V1 bus +24 V (A2–A4)</td></tr>
-    <tr><td class="pin"></td><td class="pin">2</td><td>White = amp power gnd</td><td>Black wire → V1 bus 0V-A (A7–A9)</td></tr>
-    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = shunt trigger</td><td><em>Back side empty</em> - touch to +24 V momentarily for shunt cal</td></tr>
-    <tr><td class="pin"></td><td class="pin">4</td><td>Black = amp out gnd</td><td>Green wire → DAQ terminals 37 / 34 / 31 (CH4L–CH6L)</td></tr>
-    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = amp Vout</td><td>Yellow wire → DAQ terminals 38 / 35 / 32 (CH4H–CH6H)</td></tr>
+    <tr><td class="pin"></td><td class="pin">2</td><td>White = amp Vout</td><td>Yellow wire → DAQ terminals 38 / 35 / 32 (CH4H–CH6H)</td></tr>
+    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = amp out gnd</td><td>Green wire → DAQ terminals 37 / 34 / 31 (CH4L–CH6L)</td></tr>
+    <tr><td class="pin"></td><td class="pin">4</td><td>Black = amp power gnd</td><td>Black wire → V1 bus 0V-A (A7–A9)</td></tr>
+    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = shunt trigger (<strong>relabel - printed "SHLD" is wrong</strong>)</td><td><em>Back side empty</em> - touch to +24 V momentarily for shunt cal</td></tr>
     <tr class="group"><td colspan="4">TB-J8 - pressure landing (5 ways)</td></tr>
-    <tr><td class="pin">TB-J8</td><td class="pin">1</td><td>Brown = Setra +Exc</td><td>Red wire → TB-X X1 (+24V_C from A3)</td></tr>
-    <tr><td class="pin"></td><td class="pin">2</td><td>White = Setra −Exc</td><td>Black wire → TB-X X2 (GND_24ISO - floats, touches nothing else)</td></tr>
-    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = Setra +Out</td><td>White wire → DAQ terminal 29 (CH7H)</td></tr>
-    <tr><td class="pin"></td><td class="pin">4</td><td>Black = Setra −Out</td><td>Blue wire → DAQ terminal 28 (CH7L) <em>and</em> black wire → GND bus (island reference - keep both)</td></tr>
-    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = shield/case</td><td>Black wire → panel earth stud</td></tr>
+    <tr><td class="pin">TB-J8</td><td class="pin">1</td><td>Brown = Setra +Exc</td><td>Orange wire (24V-ISO) → TB-X X1 (+24V_C from A3)</td></tr>
+    <tr><td class="pin"></td><td class="pin">2</td><td>White = Setra +Out</td><td>White wire → DAQ terminal 29 (CH7H)</td></tr>
+    <tr><td class="pin"></td><td class="pin">3</td><td>Blue = Setra −Out</td><td>Blue wire → DAQ terminal 28 (CH7L) <em>and</em> a wire → GND bus G5 (island reference - keep both)</td></tr>
+    <tr><td class="pin"></td><td class="pin">4</td><td>Black = Setra −Exc</td><td>Wire (GND-ISO) → TB-X X2 (GND_24ISO - floats, touches nothing else)</td></tr>
+    <tr><td class="pin"></td><td class="pin">5</td><td>Gray = shield/case</td><td>Wire → panel earth stud</td></tr>
     <tr class="group"><td colspan="4">GND bus - G1–G6, all jumpered = AGND; 2 drops to DAQ terminals 12 and 39</td></tr>
     <tr><td class="pin">G1–G6</td><td class="pin"> - </td><td colspan="2">G1–G4 = gauge shields (term 5) · G5 = Setra −Out reference (alongside its CH7L wire) · G6 = the blue GND_24 reference jumper from A6. No spare positions - the strip holds exactly six blocks</td></tr>
   </tbody>
@@ -700,133 +706,113 @@ FBS 4-5 3030187 ×3 - the 6-block GND bus is bridged with one FBS 5-5 + one FBS 
 <p class="eyebrow">§5 · Panel</p>
 <h2 id="panel">Panel layout</h2>
 <figure>
-<svg viewBox="0 0 900 640" role="img" aria-label="Panel front view: bulkhead connectors on the left edge feed a vertical wire duct; three DIN rails carry power terminals with fuses and the isolated island supply, a spare rail, and the signal terminal blocks; the DAQ mounts lower right; supply and USB cables enter at the bottom edge." style="color: var(--ink);">
-  <!-- panel -->
-  <rect x="130" y="24" width="730" height="540" rx="8" fill="var(--surface)" stroke="currentColor" stroke-width="2"/>
-  <g fill="none" stroke="var(--muted)">
-    <circle cx="152" cy="46" r="5"/><circle cx="838" cy="46" r="5"/>
-    <circle cx="152" cy="542" r="5"/><circle cx="838" cy="542" r="5"/>
-  </g>
-  <text x="118" y="300" font-size="11" font-weight="700" letter-spacing="2" fill="var(--muted)" text-anchor="middle" transform="rotate(-90 118 300)">FLUME-SIDE CABLE ENTRY</text>
+<svg viewBox="0 0 900 660" role="img" aria-label="Panel interior, as built: three horizontal DIN rail rows - DAQ on the top row, power buses and five supplies on the middle row, landing strips and AC entry on the bottom row - with all bulkhead connectors and the USB feed-through on a gland plate along the bottom edge." style="color: var(--ink);">
+  <rect x="60" y="24" width="780" height="560" rx="8" fill="var(--surface)" stroke="currentColor" stroke-width="2"/>
 
-  <!-- bulkheads -->
-  <g fill="none" stroke="var(--accent)" stroke-width="2">
-    <circle cx="172" cy="90" r="12"/><circle cx="172" cy="150" r="12"/>
-    <circle cx="172" cy="210" r="12"/><circle cx="172" cy="270" r="12"/>
-  </g>
-  <text x="172" y="94" font-size="9" text-anchor="middle" fill="var(--accent)" font-weight="700">J1</text>
-  <text x="172" y="154" font-size="9" text-anchor="middle" fill="var(--accent)" font-weight="700">J2</text>
-  <text x="172" y="214" font-size="9" text-anchor="middle" fill="var(--accent)" font-weight="700">J3</text>
-  <text x="172" y="274" font-size="9" text-anchor="middle" fill="var(--accent)" font-weight="700">J4</text>
-
-  <!-- glands -->
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <rect x="160" y="322" width="24" height="20" rx="3"/>
-    <rect x="160" y="372" width="24" height="20" rx="3"/>
-    <rect x="160" y="422" width="24" height="20" rx="3"/>
-    <rect x="160" y="482" width="24" height="20" rx="3"/>
-  </g>
-  <text x="196" y="336" font-size="10" fill="var(--muted)">J5 · IAA-1</text>
-  <text x="196" y="386" font-size="10" fill="var(--muted)">J6 · IAA-2</text>
-  <text x="196" y="436" font-size="10" fill="var(--muted)">J7 · IAA-3</text>
-  <text x="196" y="496" font-size="10" fill="var(--muted)">J8 · PS1</text>
+  <!-- TB ROW 3: DAQ -->
+  <rect x="90" y="116" width="720" height="10" fill="var(--code-bg)" stroke="currentColor"/>
+  <text x="96" y="110" font-size="10" font-weight="700" fill="var(--muted)">TB ROW 3</text>
+  <rect x="330" y="62" width="240" height="96" rx="6" fill="none" stroke="var(--accent)" stroke-width="2"/>
+  <rect x="340" y="72" width="220" height="12" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="0.8"/>
+  <rect x="340" y="134" width="220" height="12" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="0.8"/>
+  <text x="450" y="104" font-size="11" text-anchor="middle" font-weight="700">USB-1608G</text>
+  <text x="450" y="120" font-size="9" text-anchor="middle" fill="var(--muted)">strapped to rail · banks 1–27 / 28–54</text>
+  <text x="620" y="100" font-size="9.5" fill="var(--muted)">WG pairs ↘ top bank</text>
+  <text x="620" y="152" font-size="9.5" fill="var(--muted)">LC1–LC3 + PT1 pairs ↗ bottom bank</text>
+  <rect x="770" y="96" width="24" height="30" rx="3" fill="none" stroke="var(--ok)" stroke-width="2"/>
+  <text x="782" y="90" font-size="9" text-anchor="middle" fill="var(--ok)">PE</text>
+  <text x="200" y="96" font-size="9.5" fill="var(--muted)">USB cable ← velcro'd along rail</text>
 
   <!-- duct -->
-  <rect x="252" y="60" width="30" height="460" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
-  <g stroke="var(--muted)" stroke-width="1">
-    <line x1="252" y1="90" x2="282" y2="90"/><line x1="252" y1="130" x2="282" y2="130"/>
-    <line x1="252" y1="170" x2="282" y2="170"/><line x1="252" y1="210" x2="282" y2="210"/>
-    <line x1="252" y1="250" x2="282" y2="250"/><line x1="252" y1="290" x2="282" y2="290"/>
-    <line x1="252" y1="330" x2="282" y2="330"/><line x1="252" y1="370" x2="282" y2="370"/>
-    <line x1="252" y1="410" x2="282" y2="410"/><line x1="252" y1="450" x2="282" y2="450"/>
-    <line x1="252" y1="490" x2="282" y2="490"/>
+  <rect x="90" y="176" width="720" height="16" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="1"/>
+  <text x="450" y="188" font-size="8.5" text-anchor="middle" fill="var(--muted)">wire duct · CAUTION 120 VAC labels over the supply section</text>
+
+  <!-- TB ROW 2: buses + supplies -->
+  <rect x="90" y="288" width="720" height="10" fill="var(--code-bg)" stroke="currentColor"/>
+  <text x="96" y="282" font-size="10" font-weight="700" fill="var(--muted)">TB ROW 2</text>
+  <rect x="200" y="238" width="90" height="48" rx="4" fill="none" stroke="#2e5fa3" stroke-width="2"/>
+  <text x="245" y="258" font-size="9.5" text-anchor="middle" font-weight="700" fill="#2e5fa3">AGND bus</text>
+  <text x="245" y="272" font-size="8.5" text-anchor="middle" fill="var(--muted)">blue blocks</text>
+  <rect x="310" y="238" width="110" height="48" rx="4" fill="none" stroke="currentColor"/>
+  <text x="365" y="258" font-size="9.5" text-anchor="middle" font-weight="700">GND + 12 V bus</text>
+  <text x="365" y="272" font-size="8.5" text-anchor="middle" fill="var(--muted)">black · yellow blocks</text>
+  <rect x="440" y="238" width="60" height="48" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
+  <text x="470" y="266" font-size="9" text-anchor="middle" font-weight="700">12V ·&#8201;SP</text>
+  <rect x="510" y="238" width="54" height="48" rx="4" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="537" y="258" font-size="9" text-anchor="middle" font-weight="700" fill="#c0392b">+24 V bus</text>
+  <text x="537" y="272" font-size="8.5" text-anchor="middle" fill="var(--muted)">red blocks</text>
+  <rect x="574" y="238" width="60" height="48" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
+  <text x="604" y="266" font-size="9" text-anchor="middle" font-weight="700">24V ·&#8201;SP</text>
+  <rect x="644" y="238" width="60" height="48" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
+  <text x="674" y="260" font-size="9" text-anchor="middle" font-weight="700">24V ISO</text>
+  <text x="674" y="274" font-size="8.5" text-anchor="middle" fill="var(--muted)">Setra only</text>
+  <text x="716" y="262" font-size="8.5" fill="var(--muted)">DC fuses per rail</text>
+
+  <!-- duct -->
+  <rect x="90" y="348" width="720" height="16" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="1"/>
+
+  <!-- TB ROW 1: landings + AC -->
+  <rect x="90" y="460" width="720" height="10" fill="var(--code-bg)" stroke="currentColor"/>
+  <text x="96" y="454" font-size="10" font-weight="700" fill="var(--muted)">TB ROW 1</text>
+  <rect x="150" y="404" width="190" height="54" rx="4" fill="none" stroke="currentColor"/>
+  <g stroke="var(--line)"><line x1="197" y1="404" x2="197" y2="458"/><line x1="244" y1="404" x2="244" y2="458"/><line x1="291" y1="404" x2="291" y2="458"/></g>
+  <text x="173" y="426" font-size="9" text-anchor="middle">WG1</text>
+  <text x="220" y="426" font-size="9" text-anchor="middle">WG2</text>
+  <text x="267" y="426" font-size="9" text-anchor="middle">WG3</text>
+  <text x="315" y="426" font-size="9" text-anchor="middle">WG4</text>
+  <text x="245" y="446" font-size="8" text-anchor="middle" fill="var(--muted)">1 BRN-12V · 2 WHT-SIG · 3 BLU-AGND · 4 BLK-GND · 5 GRY-SHLD</text>
+  <rect x="360" y="404" width="145" height="54" rx="4" fill="none" stroke="currentColor"/>
+  <g stroke="var(--line)"><line x1="408" y1="404" x2="408" y2="458"/><line x1="456" y1="404" x2="456" y2="458"/></g>
+  <text x="384" y="426" font-size="9" text-anchor="middle">LC1</text>
+  <text x="432" y="426" font-size="9" text-anchor="middle">LC2</text>
+  <text x="480" y="426" font-size="9" text-anchor="middle">LC3</text>
+  <text x="433" y="446" font-size="8" text-anchor="middle" fill="var(--muted)">as WG but 24 V · term 5 = SHUNT</text>
+  <rect x="525" y="404" width="60" height="54" rx="4" fill="none" stroke="#e8940c" stroke-width="1.5"/>
+  <text x="555" y="426" font-size="9" text-anchor="middle">PT1</text>
+  <text x="555" y="446" font-size="8" text-anchor="middle" fill="var(--muted)">24V-ISO orange</text>
+  <rect x="660" y="404" width="130" height="54" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
+  <text x="725" y="426" font-size="9" text-anchor="middle" font-weight="700">AC entry · fuses · PE</text>
+  <text x="725" y="442" font-size="8.5" text-anchor="middle" fill="var(--muted)">gray blocks · 120 VAC</text>
+
+  <!-- gland plate -->
+  <rect x="110" y="520" width="680" height="44" rx="4" fill="var(--ink)" opacity="0.85"/>
+  <g fill="none" stroke="var(--bg)" stroke-width="1.5">
+    <circle cx="170" cy="542" r="10"/><circle cx="240" cy="542" r="10"/><circle cx="310" cy="542" r="10"/><circle cx="380" cy="542" r="10"/>
+    <circle cx="470" cy="542" r="10"/><circle cx="540" cy="542" r="10"/><circle cx="610" cy="542" r="10"/><circle cx="680" cy="542" r="10"/>
+    <rect x="730" y="532" width="30" height="20" rx="3"/>
   </g>
-  <text x="267" y="300" font-size="10" font-weight="700" fill="var(--muted)" text-anchor="middle" transform="rotate(-90 267 300)">WIRE DUCT 25 × 40</text>
-
-  <!-- Rail A -->
-  <rect x="310" y="118" width="520" height="10" fill="var(--code-bg)" stroke="currentColor"/>
-  <text x="834" y="112" font-size="10" font-weight="700" fill="var(--muted)" text-anchor="end">RAIL A · POWER</text>
-  <rect x="320" y="84" width="70" height="56" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
-  <text x="355" y="108" font-size="10" text-anchor="middle" font-weight="700">FA · FB</text>
-  <text x="355" y="122" font-size="9" text-anchor="middle" fill="var(--muted)">fuses</text>
-  <rect x="400" y="84" width="200" height="56" rx="4" fill="none" stroke="currentColor"/>
-  <text x="500" y="108" font-size="11" text-anchor="middle" font-weight="700">TB-PWR</text>
-  <text x="500" y="123" font-size="9.5" text-anchor="middle" fill="var(--muted)">+24 · 0V-A · +12 · 0V-B · X-iso</text>
-  <rect x="612" y="84" width="110" height="56" rx="4" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
-  <text x="667" y="108" font-size="10.5" text-anchor="middle" font-weight="700">A3 · GND_24ISO</text>
-  <text x="667" y="122" font-size="9" text-anchor="middle" fill="var(--muted)">HDR-15-24 iso island</text>
-  <rect x="734" y="84" width="80" height="56" rx="4" fill="none" stroke="var(--muted)" stroke-dasharray="4 3"/>
-  <text x="774" y="115" font-size="9.5" text-anchor="middle" fill="var(--muted)">spare</text>
-
-  <!-- Rail B -->
-  <rect x="310" y="268" width="520" height="10" fill="var(--code-bg)" stroke="currentColor"/>
-  <text x="834" y="262" font-size="10" font-weight="700" fill="var(--muted)" text-anchor="end">RAIL B · SPARE</text>
-  <rect x="320" y="230" width="494" height="70" rx="4" fill="none" stroke="var(--muted)" stroke-dasharray="4 3"/>
-  <text x="567" y="260" font-size="10.5" text-anchor="middle" fill="var(--muted)">RAIL B - spare (the IAA100 amplifiers mount at the flume,</text>
-  <text x="567" y="276" font-size="10.5" text-anchor="middle" fill="var(--muted)">next to their load cells; the amp cables arrive at J5–J7)</text>
-
-  <!-- Rail C -->
-  <rect x="310" y="428" width="520" height="10" fill="var(--code-bg)" stroke="currentColor"/>
-  <text x="626" y="422" font-size="10" font-weight="700" fill="var(--muted)" text-anchor="end">RAIL C · SIGNAL TERMINALS</text>
-  <rect x="320" y="398" width="290" height="60" rx="4" fill="none" stroke="currentColor"/>
-  <g stroke="var(--line)"><line x1="352" y1="398" x2="352" y2="458"/><line x1="384" y1="398" x2="384" y2="458"/>
-  <line x1="416" y1="398" x2="416" y2="458"/><line x1="448" y1="398" x2="448" y2="458"/>
-  <line x1="480" y1="398" x2="480" y2="458"/><line x1="512" y1="398" x2="512" y2="458"/>
-  <line x1="544" y1="398" x2="544" y2="458"/><line x1="576" y1="398" x2="576" y2="458"/></g>
-  <text x="336" y="432" font-size="9" text-anchor="middle">J1</text>
-  <text x="368" y="432" font-size="9" text-anchor="middle">J2</text>
-  <text x="400" y="432" font-size="9" text-anchor="middle">J3</text>
-  <text x="432" y="432" font-size="9" text-anchor="middle">J4</text>
-  <text x="464" y="432" font-size="9" text-anchor="middle">J5</text>
-  <text x="496" y="432" font-size="9" text-anchor="middle">J6</text>
-  <text x="528" y="432" font-size="9" text-anchor="middle">J7</text>
-  <text x="560" y="432" font-size="9" text-anchor="middle">J8</text>
-  <text x="593" y="432" font-size="9" text-anchor="middle">G…</text>
-  <text x="465" y="474" font-size="9.5" fill="var(--muted)" text-anchor="middle">TB-J1–J8 landings · GND bus G1–G6 jumpered</text>
-
-  <!-- DAQ -->
-  <rect x="650" y="460" width="180" height="84" rx="6" fill="none" stroke="var(--accent)" stroke-width="2"/>
-  <rect x="658" y="468" width="164" height="10" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="0.8"/>
-  <rect x="658" y="526" width="164" height="10" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="0.8"/>
-  <text x="740" y="500" font-size="11" text-anchor="middle" font-weight="700">USB-1608G</text>
-  <text x="740" y="515" font-size="9" text-anchor="middle" fill="var(--muted)">terminal banks 1–27 / 28–54</text>
-  <line x1="612" y1="458" x2="656" y2="470" stroke="currentColor" stroke-width="1.2"/>
-  <text x="600" y="452" font-size="9.5" fill="var(--muted)" text-anchor="end">white+green pairs + AGND</text>
-
-  <!-- bottom entries -->
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <rect x="300" y="554" width="24" height="20" rx="3"/>
-    <rect x="360" y="554" width="24" height="20" rx="3"/>
+  <g font-size="8.5" fill="var(--bg)" text-anchor="middle">
+    <text x="170" y="578" fill="var(--muted)">WG1</text><text x="240" y="578" fill="var(--muted)">WG2</text>
+    <text x="310" y="578" fill="var(--muted)">WG3</text><text x="380" y="578" fill="var(--muted)">WG4</text>
+    <text x="470" y="578" fill="var(--muted)">LC1</text><text x="540" y="578" fill="var(--muted)">LC2</text>
+    <text x="610" y="578" fill="var(--muted)">LC3</text><text x="680" y="578" fill="var(--muted)">PT1</text>
+    <text x="745" y="578" fill="var(--muted)">USB</text>
   </g>
-  <text x="312" y="596" font-size="10" fill="var(--muted)" text-anchor="middle">IEC C14 inlet</text>
-  <text x="372" y="612" font-size="10" fill="var(--muted)" text-anchor="middle">(mains, fused)</text>
-  <rect x="750" y="554" width="36" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <text x="768" y="596" font-size="10" fill="var(--muted)" text-anchor="middle">USB-B jack (4216)</text>
+  <text x="96" y="604" font-size="9.5" fill="var(--muted)">bulkhead gland plate (bottom face) - M12 receptacles labeled by sensor + USB-B feed-through</text>
 
-  <!-- earth stud -->
-  <circle cx="820" cy="46" r="0"/>
-  <circle cx="808" cy="80" r="6" fill="none" stroke="var(--ok)" stroke-width="2"/>
-  <line x1="804" y1="84" x2="812" y2="76" stroke="var(--ok)" stroke-width="1.5"/>
-  <text x="800" y="66" font-size="9.5" fill="var(--ok)" text-anchor="end">earth stud (Setra shield/case)</text>
+  <!-- earth -->
+  <circle cx="812" cy="52" r="6" fill="none" stroke="var(--ok)" stroke-width="2"/>
+  <line x1="808" y1="56" x2="816" y2="48" stroke="var(--ok)" stroke-width="1.5"/>
+  <text x="800" y="44" font-size="9.5" fill="var(--ok)" text-anchor="end">earth stud</text>
 </svg>
-<figcaption><strong>Fig. 2 - Panel front view.</strong> Field cabling enters on the left (flume side) and
-bottom (bench side); the vertical duct carries everything to three horizontal DIN rails. Signal flow is
-top-to-bottom-right: power on Rail A, signal landing on Rail C (the amplifiers live at the flume), then
-twisted white+green channel pairs into the DAQ's terminal banks. As built: VEVOR 24×24×8 steel enclosure,
-rails and duct on its removable 21.7-inch-square backplate (four 20-inch aluminum rails - this sketch's
-three-rail layout generalizes); keep ≥40 mm between duct and terminals for finger room.</figcaption>
+<figcaption><strong>Fig. 2 - Panel interior, as built.</strong> Three DIN-rail rows, numbered bottom-up:
+<strong>TB ROW 1</strong> holds the per-sensor landing strips (WG1–WG4, LC1–LC3, PT1 - blocks color-coded to
+their function) plus the fused AC entry; <strong>TB ROW 2</strong> holds the AGND / ground / supply buses and
+five Mean Well supplies (12 V, 24 V, 24 V-ISO + mounted 12 V and 24 V spares) with DC fuse terminals;
+<strong>TB ROW 3</strong> holds the USB-1608G strapped to the rail, both terminal banks reachable. All field
+connections - eight M12 bulkheads labeled by sensor name plus the USB-B feed-through - enter through
+the black gland plate on the bottom face. Wire duct runs between rows; 120 VAC warning labels mark the
+supply section.</figcaption>
 </figure>
 
 <ul>
-  <li><strong>Rail A / Rail C separation</strong> keeps supply wiring and signal wiring in different duct
-  sections; run power down the left half of the duct, signals down the right.</li>
+  <li>Gland plate labels use the sensor names (WG1…PT1); this document's J1–J8 designators map to them
+  in order - J1–J4 = WG1–WG4, J5–J7 = LC1–LC3, J8 = PT1.</li>
   <li>The IAA100 amplifiers mount at the flume next to their load cells (splash hood or small enclosure -
-  they are not submersible); each amp's 5-conductor cable W12–W14 runs to its panel connector J5–J7.
-  Rail B stays as spare space.</li>
-  <li>The USB-1608G is a desktop-style module: mount with adhesive DIN clips or a small shelf bracket
-  near the lower right so both screw-terminal banks (1–27 and 28–54) stay reachable.</li>
-  <li>End-clamps at both ends of every terminal group; marker tags on every terminal (S1…, A1…, G1…) matching
-  the schedules in §4.</li>
+  they are not submersible); each amp's 5-conductor cable W12–W14 runs to its panel connector.</li>
+  <li>Signal pairs stay twisted from strip to DAQ; power and signal run in separate duct sections.</li>
+  <li>End-clamps at both ends of every terminal group; the printed strip legends list each terminal's
+  wire color and function (fix the LC "5-GRY-SHLD" legends - term 5 is the SHUNT).</li>
 </ul>
 
 <!-- ============================================================ -->
@@ -837,7 +823,7 @@ three-rail layout generalizes); keep ≥40 mm between duct and terminals for fin
   through the GND bus - gauges via their shields, the force rail via the A6 jumper, the Setra via −Out.
   Akamina calls AGND "the only ground reference in the system." In differential mode these references
   double as the DC return paths the 1608G manual requires for each channel.</li>
-  <li><strong>Wave gauges:</strong> the black shield-substitute wire (gauge pin D) lands on the AGND bus at the
+  <li><strong>Wave gauges:</strong> the cable drain (gauge pin D) lands on the AGND bus at the
   panel end only - that is the gauge domain's reference. Signal low now runs to its CHxL terminal
   (blue wire), <em>not</em> to the bus. Power low is already bonded to the shield inside the gauge -
   do not ground it again at the supply, and do not add a ground at the probe (Akamina measured doubled
@@ -868,9 +854,9 @@ requirement. A machine-readable copy lives at <code>docs/BOM.csv</code> in the p
   <thead><tr><th class="pin">Ref</th><th>Item</th><th class="pin">Qty</th><th>Notes</th></tr></thead>
   <tbody>
     <tr><td class="pin">WG1–WG4</td><td>Akamina AWP-24-3 wave height gauge</td><td class="pin">4</td><td>Each includes one AWPC-01 (PT06E-10-6S) cable plug</td></tr>
-    <tr><td class="pin">F1–F3</td><td>FUTEK LSB210 S-Beam Jr. load cell, 10 lb (FSH03942)</td><td class="pin">3</td><td>Integral 5 ft submersible cable</td></tr>
+    <tr><td class="pin">LC1–LC3</td><td>FUTEK LSB210 S-Beam Jr. load cell, 10 lb (FSH03942)</td><td class="pin">3</td><td>Integral 5 ft submersible cable</td></tr>
     <tr><td class="pin">IAA-1…3</td><td>FUTEK IAA100 strain gauge amplifier</td><td class="pin">3</td><td>With IAA100/IAA200 4-pos sensor-side terminal housings</td></tr>
-    <tr><td class="pin">PS1</td><td>Setra 239 differential pressure transducer - label 2391-015WB1F23259NN: ±15 inWC, output ±2.5 V, excitation 22–30 VDC (standard 4-wire unit)</td><td class="pin">1</td><td>Integral 2 ft cable</td></tr>
+    <tr><td class="pin">PT1</td><td>Setra 239 differential pressure transducer - label 2391-015WB1F23259NN: ±15 inWC, output ±2.5 V, excitation 22–30 VDC (standard 4-wire unit)</td><td class="pin">1</td><td>Integral 2 ft cable</td></tr>
     <tr><td class="pin">DAQ</td><td>MCC USB-1608G - 16-bit, 8 differential / 16 SE, ranges ±10/±5/±2/±1 V per channel</td><td class="pin">1</td><td>Model confirmed on the unit 2026-10 (the original plan assumed a USB-1208FS-Plus); check whether a USB A–B cable was included</td></tr>
     <tr><td class="pin">PSU</td><td>BK Precision 1672 triple-output DC bench supply</td><td class="pin">1</td><td>Retired to the bench - teaching setups + current-limited commissioning; the panel is self-powered</td></tr>
   </tbody>
@@ -886,8 +872,8 @@ requirement. A machine-readable copy lives at <code>docs/BOM.csv</code> in the p
     <tr><td class="pin">J5–J8</td><td><strong>Cable side:</strong> M12 A-code 5-pos female plug, straight, screw terminals, unshielded plastic (18–24 AWG, PG7 gland), IP67</td><td class="pin">4 + 1 spare</td><td>TE T4110001051-000 (Mouser 571-T4110001051-000)</td></tr>
     <tr><td class="pin">⚠ J8</td><td>J8 is <em>identical</em> to J5–J7 - label all four unmistakably (cross-plugging misroutes the 24 V domains: iso-module overload or a grounded Setra excitation). Optional: order J8's pair in a different M12 coding to restore hardware keying</td><td class="pin"> - </td><td> - </td></tr>
 
-    <tr><td class="pin">wire</td><td><strong>Panel internals:</strong> Adafruit 3111 spool set, 22 AWG × 6 colors (25 ft each) - ORANGE +12 V · RED +24 V · BLACK grounds · WHITE signal HI · GREEN signal LO (CHxL) · YELLOW shunt. <strong>Field bundles:</strong> Alpha 3053 20 AWG 100 ft, black + white (add orange + red spools if any run exceeds ~6 ft)</td><td class="pin">1 set + 2 spools</td><td>Mouser 485-3111 · 602-3053 BK005 · 602-3053 WH005</td></tr>
-    <tr><td class="pin"> - </td><td>Field runs W1–W4 / W12–W14 are twisted bundles of 5 single wires - twist each white with its black return, heat-shrink the bundle at the plug gland, ring-mark repeated blacks</td><td class="pin"> - </td><td> - </td></tr>
+    <tr><td class="pin">wire</td><td><strong>Panel internals:</strong> Adafruit 3111 spool set, 22 AWG × 6 colors (25 ft each) - as built: YELLOW +12 V · RED +24 V · ORANGE 24V-ISO · BLACK grounds · BLUE AGND · WHITE/BLUE = gauge + pressure HI/LO pairs · YELLOW/GREEN = load cell HI/LO pairs. <strong>Field bundles:</strong> Alpha 3053 20 AWG 100 ft, black + white (add orange + red spools if any run exceeds ~6 ft)</td><td class="pin">1 set + 2 spools</td><td>Mouser 485-3111 · 602-3053 BK005 · 602-3053 WH005</td></tr>
+    <tr><td class="pin"> - </td><td>Field runs as built: W1–W4 = 2-pair shielded cable (red/blk power, grn/wht signal, drain); W12–W14 = 5-conductor (red/wht/blu/blk/org); heat-shrink at the plug gland</td><td class="pin"> - </td><td> - </td></tr>
   </tbody>
 </table></div>
 
@@ -914,7 +900,7 @@ requirement. A machine-readable copy lives at <code>docs/BOM.csv</code> in the p
     <tr><td class="pin">TB3</td><td><strong>V1 voltage bus:</strong> feed-through blocks 2.5 mm² - A1–A5 jumpered = +24 V, A6–A10 jumpered = 0V-A (feeds IAA-1…3 + U5 input)</td><td class="pin">10 ways</td><td>Phoenix UT 2,5 color family (see legend above)</td></tr>
     <tr><td class="pin">TB4</td><td><strong>V2 voltage bus:</strong> B1–B5 jumpered = +12 V, B6–B10 jumpered = 0V-B (feeds WG1–4 via J1–J4)</td><td class="pin">10 ways</td><td>same series</td></tr>
     <tr><td class="pin">TB2</td><td><strong>GND bus:</strong> G1–G6 all jumpered = AGND - G1–G4 shields, G5 Setra −Out tie, G6 GND_24 jumper from A6; drops to DAQ pins 12/39 leave from the back sides. No spares on the strip</td><td class="pin">6 ways</td><td>same series</td></tr>
-    <tr><td class="pin">TB-J1–J8</td><td><strong>Per-connector landing strips:</strong> each bulkhead's 5 pigtail leads land on their own strip (terminal numbers = M12 contacts), NOT jumpered - internal panel wires leave the other side; amp shunt leads park on term 3</td><td class="pin">40 ways</td><td>same series</td></tr>
+    <tr><td class="pin">TB-J1–J8</td><td><strong>Per-connector landing strips:</strong> each bulkhead's 5 pigtail leads land on their own strip (terminal numbers = M12 contacts), NOT jumpered - internal panel wires leave the other side; amp shunt leads park on term 5</td><td class="pin">40 ways</td><td>same series</td></tr>
     <tr><td class="pin">TB5</td><td><strong>Isolated pair:</strong> X1–X2 Setra excitation, NOT jumpered, never bused to anything</td><td class="pin">2 ways</td><td>same series</td></tr>
     <tr><td class="pin"> - </td><td>Spare blocks</td><td class="pin">~16 ways</td><td>same series - total order: 90 ways (~20% overage)</td></tr>
     <tr><td class="pin"> - </td><td>Insertion bridges: FBS 5-5 ×5 (V1/V2 groups), FBS 10-5 ×2 + FBS 3-5 ×2 (GND bus, staggered), FBS 4-5 ×3 (TB14 L/N groups)</td><td class="pin">12</td><td>Phoenix 3030190 / 3030213 / 3030174 / 3030187</td></tr>
@@ -954,6 +940,11 @@ are the biggest line item.</p>
   <li>After first power-up: set InstaCal to DIFFERENTIAL and the per-channel ranges (CH7 ±5 V, all others ±10 V), allow the
   15-minute warm-up, then shunt-cal each IAA100 (pin 3) and record gauge calibration slopes (V per cm of
   immersion) into the acquisition software.</li>
+  <li><strong>Relabel LC strips:</strong> the printed "5-GRY-SHLD" legend on LC1–LC3 is wrong - contact 5
+  carries the IAA100 SHUNT line (orange at the amp, FI1573). LC shields stay at the amp chassis screw.</li>
+  <li>DC fuse ratings as installed read 12 V: 0.5 A / 24 V: 0.25 A / 24 V-ISO: 0.2 A - differs from the
+  FA (24 V, 0.5 A time-delay) / FB (12 V, 0.25 A) plan in §7. Confirm cartridges ride out the 3× IAA100
+  inrush on the 24 V rail.</li>
   <li>Noise debug (2026-10, one gauge connected): first re-land the wires per the 1608G terminal numbers -
   the old single-ended map put them on the wrong physical screws - then repeat with the laptop on battery
   to rule out a USB ground loop.</li>
@@ -972,8 +963,7 @@ are the biggest line item.</p>
 <p class="src">Rev A 2026-08-10; BOM added 2026-09-09; Rev B 2026-09-15 (self-powered panel, landing-strip
 terminal architecture, color-coded UT blocks); Rev C 2026-10-15/16 (DAQ corrected to USB-1608G; as-built channels gauges CH0–3 / force CH4–6 / pressure CH7, pairs white-blue (HI-LO) and yellow-green, all eight
 channels differential, green = signal-LO wiring, A6 ground-reference jumper, net names GND_24/GND_12/GND_24ISO + <sensor>_H/_L, TE screw-terminal plugs,
-VEVOR enclosure + aluminum rails). The as-built channel assignments above supersede the original
-DAQ_Sketch.pdf plan (which had force CH0–2, pressure CH3, gauges CH4–7).</p>
+VEVOR enclosure + aluminum rails); Rev D 2026-10-19 (as built from installer photos + notebook: sensors renamed LC1–LC3 / PT1, every M12 recabled to the common contact scheme 1 PWR+ / 2 SIG HI / 3 SIG LO / 4 PWR− / 5 shield-or-shunt, three-row panel with bottom gland plate, yellow = 12 V and orange = iso island, spare supplies mounted). The as-built channel assignments supersede the original DAQ_Sketch.pdf plan (which had force CH0–2, pressure CH3, gauges CH4–7).</p>
 </main>
 
 <script>

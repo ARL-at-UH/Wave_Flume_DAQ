@@ -1,8 +1,8 @@
 Group,Ref,Item,Spec,Qty,Status,Example part,Notes
 1 In hand,WG1-WG4,Wave height gauge,Akamina AWP-24-3,4,In hand,,Each includes one AWPC-01 (PT06E-10-6S) cable plug
-1 In hand,F1-F3,Load cell 10 lb S-beam,FUTEK LSB210 (FSH03942),3,In hand,,Integral 5 ft submersible cable - wires into IAA100 sensor block at the flume
+1 In hand,LC1-LC3,Load cell 10 lb S-beam,FUTEK LSB210 (FSH03942),3,In hand,,Integral 5 ft submersible cable - wires into IAA100 sensor block at the flume
 1 In hand,IAA-1..IAA-3,Strain gauge amplifier,FUTEK IAA100,3,In hand,,With IAA100/IAA200 4-pos sensor-side terminal housings; mounted at the flume
-1 In hand,PS1,Differential pressure transducer +/-15 inWC output +/-2.5 V,Setra 2391-015WB1F23259NN (excit 22-30 VDC standard 4-wire),1,In hand,,Integral 2 ft cable; check termination color code (Y1/Y4/Y6 vs 02/10/25)
+1 In hand,PT1,Differential pressure transducer +/-15 inWC output +/-2.5 V,Setra 2391-015WB1F23259NN (excit 22-30 VDC standard 4-wire),1,In hand,,Integral 2 ft cable; check termination color code (Y1/Y4/Y6 vs 02/10/25)
 1 In hand,DAQ,USB data acquisition module,MCC USB-1208FS-Plus,1,In hand,,Single-ended mode; terminals 13-40 unused
 1 In hand,PSU,Triple-output DC bench supply,BK Precision 1672,1,In hand,,Retired to the bench (teaching setups + commissioning with current limit); panel is self-powered
 2 MOUSER - connectors,J1-J4 panel side,M12 B-code 5-pos MALE panel receptacle rear-mount 0.5 m pigtail,IP67; B-code cannot mate A-coded J5-J8,4 + 1 spare = 5,Buy,TE T4171010405-002,Mouser 571-T4171010405-002

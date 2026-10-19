@@ -107,9 +107,9 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 1.27 180)
+					(at 17.78 3.81 180)
 					(length 2.54)
-					(name "SIG_HI_(wht)"
+					(name "SIG_HI_(grn)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -125,9 +125,9 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 -1.27 180)
+					(at 17.78 1.27 180)
 					(length 2.54)
-					(name "SIG_LO_(blk)"
+					(name "SIG_LO_(wht)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -145,7 +145,7 @@
 				(pin passive line
 					(at 17.78 -3.81 180)
 					(length 2.54)
-					(name "SHIELD_(blk)"
+					(name "SHIELD_(drain)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -161,7 +161,7 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 3.81 180)
+					(at 17.78 -1.27 180)
 					(length 2.54)
 					(name "PWR_LO_(blk)"
 						(effects
@@ -181,7 +181,7 @@
 				(pin passive line
 					(at 17.78 6.35 180)
 					(length 2.54)
-					(name "PWR_HI_(org)"
+					(name "PWR_HI_(red)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -377,7 +377,7 @@
 				(pin passive line
 					(at -17.78 5.08 0)
 					(length 2.54)
-					(name "2=PWR_GND"
+					(name "2=VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -413,7 +413,7 @@
 				(pin passive line
 					(at -17.78 2.54 0)
 					(length 2.54)
-					(name "3=SHUNT"
+					(name "3=OUT_GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -449,7 +449,7 @@
 				(pin passive line
 					(at -17.78 0 0)
 					(length 2.54)
-					(name "4=OUT_GND"
+					(name "4=PWR_GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -485,7 +485,7 @@
 				(pin passive line
 					(at -17.78 -2.54 0)
 					(length 2.54)
-					(name "5=VOUT"
+					(name "5=SHUNT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -699,7 +699,7 @@
 				(pin passive line
 					(at -17.78 2.54 0)
 					(length 2.54)
-					(name "2=-EXC"
+					(name "2=+OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -735,7 +735,7 @@
 				(pin passive line
 					(at -17.78 0 0)
 					(length 2.54)
-					(name "3=+OUT"
+					(name "3=-OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -771,7 +771,7 @@
 				(pin passive line
 					(at -17.78 -2.54 0)
 					(length 2.54)
-					(name "4=-OUT"
+					(name "4=-EXC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1021,7 +1021,7 @@
 				(pin passive line
 					(at -17.78 3.81 0)
 					(length 2.54)
-					(name "2=PWR_LO"
+					(name "2=SIG_HI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1057,7 +1057,7 @@
 				(pin passive line
 					(at -17.78 1.27 0)
 					(length 2.54)
-					(name "3=SIG_HI"
+					(name "3=SIG_LO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1093,7 +1093,7 @@
 				(pin passive line
 					(at -17.78 -1.27 0)
 					(length 2.54)
-					(name "4=SIG_LO"
+					(name "4=PWR_LO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1677,7 +1677,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 5.08 180)
+					(at 20.32 0 180)
 					(length 2.54)
 					(name "PWR_GND"
 						(effects
@@ -1695,7 +1695,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 2.54 180)
+					(at 20.32 -2.54 180)
 					(length 2.54)
 					(name "SHUNT"
 						(effects
@@ -1713,7 +1713,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 0 180)
+					(at 20.32 2.54 180)
 					(length 2.54)
 					(name "OUT_GND"
 						(effects
@@ -1731,7 +1731,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 -2.54 180)
+					(at 20.32 5.08 180)
 					(length 2.54)
 					(name "VOUT"
 						(effects
@@ -2220,7 +2220,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 2.54 180)
+					(at 20.32 -2.54 180)
 					(length 2.54)
 					(name "-EXC_(blk)"
 						(effects
@@ -2238,7 +2238,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 0 180)
+					(at 20.32 2.54 180)
 					(length 2.54)
 					(name "+OUT_(yel/grn)"
 						(effects
@@ -2256,7 +2256,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 -2.54 180)
+					(at 20.32 0 180)
 					(length 2.54)
 					(name "-OUT_(brn/wht)"
 						(effects
@@ -6023,7 +6023,7 @@
 		)
 		(uuid "2240197a-f364-4d74-99fe-1df999304ed0")
 	)
-	(text "4. TB-J8 (pressure): term 3 (+Out, white) -> pin 29 CH7H, term 4 (-Out, blue) -> pin 28 CH7L. Term 4 ALSO keeps its GND-bus wire (isolation island reference)."
+	(text "4. TB-J8 (pressure): term 2 (+Out, white) -> pin 29 CH7H, term 3 (-Out, blue) -> pin 28 CH7L. Term 3 ALSO keeps its GND-bus wire (isolation island reference)."
 		(exclude_from_sim no)
 		(at 406.908 42.164 0)
 		(effects
@@ -6034,7 +6034,7 @@
 		)
 		(uuid "235520d9-09cb-4e99-992f-425c985610ac")
 	)
-	(text "G5 = Setra -Out island tie (PS1_L)"
+	(text "G5 = Setra -Out island tie (PT1_L)"
 		(exclude_from_sim no)
 		(at 228.6 124.46 0)
 		(effects
@@ -6078,7 +6078,7 @@
 		)
 		(uuid "3b929c36-f6eb-4096-b414-0c2f6e6f9076")
 	)
-	(text "EARTH = panel earth stud (mains inlet PE + Setra case/shield). SHUNT leads park on TB-J5..J7 terminal 3 (back side empty); touch to +24V momentarily for shunt cal."
+	(text "EARTH = panel earth stud (mains inlet PE + Setra case/shield). SHUNT leads park on TB-J5..J7 terminal 5 (back side empty); touch to +24V momentarily for shunt cal."
 		(exclude_from_sim no)
 		(at 30.48 405.13 0)
 		(effects
@@ -6089,7 +6089,7 @@
 		)
 		(uuid "3cf53688-8b1f-4681-bc69-753b941a5514")
 	)
-	(text "2. TB-J5: term 5 (Vout, yellow) -> pin 38 CH4H, term 4 (OutGnd, green) -> pin 37 CH4L."
+	(text "2. TB-J5: term 2 (Vout, yellow) -> pin 38 CH4H, term 3 (OutGnd, green) -> pin 37 CH4L."
 		(exclude_from_sim no)
 		(at 406.908 34.544 0)
 		(effects
@@ -6133,7 +6133,7 @@
 		)
 		(uuid "473497a5-d74e-4792-978d-805d96857772")
 	)
-	(text "3x LOAD CELLS - integral 5 ft cable wires directly into the IAA100 sensor block; amps live AT THE FLUME (keep them dry). Amp power + output pass through J5-J7."
+	(text "3x LOAD CELLS - integral 5 ft cable wires directly into the IAA100 sensor block; amps live AT THE FLUME (keep them dry). Amp power + output pass through J5-J7. Cable as built: 1 red +VIN, 2 wht VOUT, 3 blu OUT_GND, 4 blk PWR_GND, 5 org SHUNT."
 		(exclude_from_sim no)
 		(at 30.48 142.24 0)
 		(effects
@@ -6144,7 +6144,7 @@
 		)
 		(uuid "487ebea5-7644-4e0e-b531-107625764658")
 	)
-	(text "M12 pigtail color code, A- and B-code alike (verify on the TE insert): contact 1 = brown, 2 = white, 3 = blue, 4 = black, 5 = gray. Label each lead before trimming."
+	(text "M12 pigtail color code, A- and B-code alike (verify on the TE insert): contact 1 = brown, 2 = white, 3 = blue, 4 = black, 5 = gray. As built: 1 = PWR+, 2 = SIG HI, 3 = SIG LO / analog ref, 4 = PWR-, 5 = shield (WG/PT) or SHUNT (LC). Label each lead before trimming."
 		(exclude_from_sim no)
 		(at 30.48 397.51 0)
 		(effects
@@ -6166,7 +6166,7 @@
 		)
 		(uuid "55165935-8bf8-43fe-a18f-65e8e4e41e66")
 	)
-	(text "PS1_L (Setra -Out) also ties to the GND bus - the isolation island's only reference."
+	(text "PT1_L (Setra -Out) also ties to the GND bus - the isolation island's only reference."
 		(exclude_from_sim no)
 		(at 420.37 203.2 0)
 		(effects
@@ -6177,7 +6177,7 @@
 		)
 		(uuid "59c98aa7-e2e0-4b3a-9e9b-162df6c50adf")
 	)
-	(text "REFERENCE JUMPER (new for differential): one BLUE wire from A6 (GND_24) to the GND bus.\nThe amps' OutGnd pins are now CH0L-CH2L inputs, so this is the force island's only path to AGND."
+	(text "REFERENCE JUMPER (new for differential): one BLUE wire from A6 (GND_24) to the GND bus.\nThe amps' OutGnd pins are now CH4L-CH6L inputs, so this is the force island's only path to AGND."
 		(exclude_from_sim no)
 		(at 424.18 186.69 0)
 		(effects
@@ -6265,7 +6265,7 @@
 		)
 		(uuid "89d4a9cc-2551-4388-967f-ed0769f79088")
 	)
-	(text "1. TB-J1..J4 (gauges): term 3 (SigHi, white) -> CH0H-CH3H = pins 1, 4, 7, 10. Term 4 (SigLo, blue) -> CH0L-CH3L = pins 2, 5, 8, 11."
+	(text "1. TB-J1..J4 (gauges): term 2 (SigHi, white) -> CH0H-CH3H = pins 1, 4, 7, 10. Term 3 (SigLo, blue) -> CH0L-CH3L = pins 2, 5, 8, 11."
 		(exclude_from_sim no)
 		(at 406.908 30.734 0)
 		(effects
@@ -6276,7 +6276,7 @@
 		)
 		(uuid "91cdc964-6097-4adb-a405-30352c72e457")
 	)
-	(text "J1-J4 'shield' = a black wire from gauge pin D: land it on contact 5, NOT on the SH shield shell - the single-point ground lives at the GND bus only."
+	(text "J1-J4 'shield' = the drain from gauge pin D: land it on contact 5, NOT on the SH shield shell - the single-point ground lives at the GND bus only."
 		(exclude_from_sim no)
 		(at 30.48 393.7 0)
 		(effects
@@ -6331,7 +6331,7 @@
 		)
 		(uuid "e137be32-b63e-474a-bafd-f97925d42324")
 	)
-	(text "3. TB-J6: term 5 -> pin 35 CH5H, term 4 -> pin 34 CH5L.  TB-J7: term 5 -> pin 32 CH6H, term 4 -> pin 31 CH6L."
+	(text "3. TB-J6: term 2 -> pin 35 CH5H, term 3 -> pin 34 CH5L.  TB-J7: term 2 -> pin 32 CH6H, term 3 -> pin 31 CH6L."
 		(exclude_from_sim no)
 		(at 406.908 38.354 0)
 		(effects
@@ -6342,7 +6342,7 @@
 		)
 		(uuid "e411d564-3401-40d5-8417-8d1366efbd59")
 	)
-	(text "4x WAVE HEIGHT GAUGES - runs W1-W4 = twisted bundles of 5 single 20 AWG wires (twist SIG_HI wht with SIG_LO blk). Gauge bonds PWR_LO to SHIELD internally."
+	(text "4x WAVE HEIGHT GAUGES - runs W1-W4, cable as built: 1 red = PWR_HI, 2 grn = SIG_HI, 3 wht = SIG_LO, 4 blk = PWR_LO, 5 = shield drain (twist SIG_HI with SIG_LO). Gauge bonds PWR_LO to SHIELD internally."
 		(exclude_from_sim no)
 		(at 30.48 33.02 0)
 		(effects
@@ -6383,7 +6383,7 @@
 		(uuid "e5bc2af0-964c-4bb5-abf2-d20a7926050c")
 	)
 	(no_connect
-		(at 246.38 157.48)
+		(at 246.38 162.56)
 		(uuid "00f8fde3-b4c8-4b58-b040-67ac8f9d8301")
 	)
 	(no_connect
@@ -6411,7 +6411,7 @@
 		(uuid "24a869e6-fb79-4947-9fe8-2dc0ddcb33cb")
 	)
 	(no_connect
-		(at 246.38 208.28)
+		(at 246.38 213.36)
 		(uuid "24eb4332-cf2b-40db-9738-2564be2d44ff")
 	)
 	(no_connect
@@ -6559,7 +6559,7 @@
 		(uuid "ea1dbbbd-f746-4756-92f9-b62c7ac38dbe")
 	)
 	(no_connect
-		(at 246.38 182.88)
+		(at 246.38 187.96)
 		(uuid "fa2486fa-e7c2-4670-a455-32f0b156abeb")
 	)
 	(wire
@@ -6714,7 +6714,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 187.96) (xy 259.08 187.96)
+			(xy 246.38 182.88) (xy 259.08 182.88)
 		)
 		(stroke
 			(width 0)
@@ -6874,7 +6874,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 162.56) (xy 259.08 162.56)
+			(xy 246.38 157.48) (xy 259.08 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7334,7 +7334,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 213.36) (xy 259.08 213.36)
+			(xy 246.38 208.28) (xy 259.08 208.28)
 		)
 		(stroke
 			(width 0)
@@ -8632,7 +8632,7 @@
 		)
 		(uuid "005a7dff-18df-47bb-9b80-4dba428caa64")
 	)
-	(label "WG2_L"
+	(label "GND_12"
 		(at 147.32 77.47 0)
 		(effects
 			(font
@@ -8682,7 +8682,7 @@
 		)
 		(uuid "0592f373-f35d-4c85-b846-50e18e22e2da")
 	)
-	(label "PS1_H"
+	(label "PT1_H"
 		(at 519.43 101.6 0)
 		(effects
 			(font
@@ -8742,7 +8742,7 @@
 		)
 		(uuid "150c26ea-47be-4534-8ba5-a31ce1b92ec2")
 	)
-	(label "F2_H"
+	(label "LC2_SHUNT"
 		(at 152.4 187.96 0)
 		(effects
 			(font
@@ -8752,7 +8752,7 @@
 		)
 		(uuid "1557fb26-2fbc-44d6-b707-8a0b49623050")
 	)
-	(label "WG3_L"
+	(label "GND_12"
 		(at 147.32 102.87 0)
 		(effects
 			(font
@@ -8762,7 +8762,7 @@
 		)
 		(uuid "15cb9c8d-0d01-4330-9824-26ee21892c50")
 	)
-	(label "PS1_L"
+	(label "GND_24ISO"
 		(at 175.26 243.84 0)
 		(effects
 			(font
@@ -8782,7 +8782,7 @@
 		)
 		(uuid "1761ed3b-4046-46c7-bea5-6dfbc1cf837a")
 	)
-	(label "F2_H"
+	(label "LC2_H"
 		(at 519.43 116.84 0)
 		(effects
 			(font
@@ -8802,7 +8802,7 @@
 		)
 		(uuid "17b7515f-345b-4854-83f5-adcd4a096afd")
 	)
-	(label "WG1_H"
+	(label "WG1_L"
 		(at 195.58 49.53 0)
 		(effects
 			(font
@@ -8822,7 +8822,7 @@
 		)
 		(uuid "1aa2fcb4-fad4-4456-b1a2-40b3e2558053")
 	)
-	(label "GND_12"
+	(label "WG1_H"
 		(at 76.2 46.99 0)
 		(effects
 			(font
@@ -8852,8 +8852,8 @@
 		)
 		(uuid "1dfd84e5-0a27-456e-b7c1-a99709e4075d")
 	)
-	(label "F2_H"
-		(at 259.08 187.96 0)
+	(label "LC2_L"
+		(at 259.08 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8882,7 +8882,7 @@
 		)
 		(uuid "219a7426-2a05-4110-93ec-84332b374c01")
 	)
-	(label "GND_24"
+	(label "LC3_H"
 		(at 152.4 205.74 0)
 		(effects
 			(font
@@ -8892,7 +8892,7 @@
 		)
 		(uuid "25716fac-666e-493d-bb1c-bd13a715f0b1")
 	)
-	(label "WG3_L"
+	(label "GND_12"
 		(at 195.58 102.87 0)
 		(effects
 			(font
@@ -8902,7 +8902,7 @@
 		)
 		(uuid "26193107-20c4-4811-8562-067f381141c9")
 	)
-	(label "GND_12"
+	(label "WG4_H"
 		(at 147.32 123.19 0)
 		(effects
 			(font
@@ -8922,7 +8922,7 @@
 		)
 		(uuid "26e3877d-4f2d-4b06-b5b0-8d01cb85c5bb")
 	)
-	(label "GND_12"
+	(label "WG4_H"
 		(at 195.58 123.19 0)
 		(effects
 			(font
@@ -8942,7 +8942,7 @@
 		)
 		(uuid "2824f96a-cdc1-4fc5-a26e-df260e968ddb")
 	)
-	(label "GND_12"
+	(label "WG2_H"
 		(at 147.32 72.39 0)
 		(effects
 			(font
@@ -8952,7 +8952,7 @@
 		)
 		(uuid "285c9e3d-1e67-46c7-bc00-557609921b7b")
 	)
-	(label "F1_L"
+	(label "GND_24"
 		(at 210.82 160.02 0)
 		(effects
 			(font
@@ -8962,7 +8962,7 @@
 		)
 		(uuid "2acc2e3e-7130-4eae-b808-7551e25f0b5f")
 	)
-	(label "GND_12"
+	(label "WG3_H"
 		(at 195.58 97.79 0)
 		(effects
 			(font
@@ -8992,7 +8992,7 @@
 		)
 		(uuid "2f1258ca-acba-44cb-bc7c-eb3faf31b1a0")
 	)
-	(label "PS1_H"
+	(label "PT1_L"
 		(at 76.2 241.3 0)
 		(effects
 			(font
@@ -9012,7 +9012,7 @@
 		)
 		(uuid "35f22b01-9aff-46e3-bfe9-3562923a724a")
 	)
-	(label "GND_24"
+	(label "LC3_H"
 		(at 259.08 205.74 0)
 		(effects
 			(font
@@ -9022,7 +9022,7 @@
 		)
 		(uuid "368f1f64-a13c-4006-b36d-b4b24eb62d7f")
 	)
-	(label "GND_12"
+	(label "WG2_H"
 		(at 195.58 72.39 0)
 		(effects
 			(font
@@ -9052,7 +9052,7 @@
 		)
 		(uuid "3a3c3981-e5a1-4795-8f4b-66caf39d6acb")
 	)
-	(label "GND_12"
+	(label "WG4_H"
 		(at 76.2 123.19 0)
 		(effects
 			(font
@@ -9062,7 +9062,7 @@
 		)
 		(uuid "3b57930b-59e5-4255-9bb1-d5d44e3dd68e")
 	)
-	(label "GND_24"
+	(label "LC1_H"
 		(at 210.82 154.94 0)
 		(effects
 			(font
@@ -9102,7 +9102,7 @@
 		)
 		(uuid "4522a2ab-a037-46bf-9556-62e2cbd5d163")
 	)
-	(label "GND_12"
+	(label "WG3_H"
 		(at 147.32 97.79 0)
 		(effects
 			(font
@@ -9112,7 +9112,7 @@
 		)
 		(uuid "453566e7-3656-41bb-b457-2bf3b5312dee")
 	)
-	(label "F2_SHUNT"
+	(label "LC2_L"
 		(at 210.82 182.88 0)
 		(effects
 			(font
@@ -9122,7 +9122,7 @@
 		)
 		(uuid "458529e1-06ec-417d-a28d-863576712f48")
 	)
-	(label "F3_L"
+	(label "GND_24"
 		(at 152.4 210.82 0)
 		(effects
 			(font
@@ -9132,7 +9132,7 @@
 		)
 		(uuid "46aa7139-78dd-4251-a128-76101f8d85fd")
 	)
-	(label "F3_H"
+	(label "LC3_SHUNT"
 		(at 152.4 213.36 0)
 		(effects
 			(font
@@ -9152,7 +9152,7 @@
 		)
 		(uuid "4bbe0f65-1e6a-4fe7-9a1d-69c555514039")
 	)
-	(label "WG4_H"
+	(label "WG4_L"
 		(at 76.2 125.73 0)
 		(effects
 			(font
@@ -9182,7 +9182,7 @@
 		)
 		(uuid "4ebaf3c7-d460-4716-a19b-e468d09aa0f1")
 	)
-	(label "GND_12"
+	(label "WG1_H"
 		(at 147.32 46.99 0)
 		(effects
 			(font
@@ -9192,7 +9192,7 @@
 		)
 		(uuid "4ee5ca3f-342b-43e3-993d-7d8fbbc3f273")
 	)
-	(label "WG3_H"
+	(label "WG3_L"
 		(at 147.32 100.33 0)
 		(effects
 			(font
@@ -9222,7 +9222,7 @@
 		)
 		(uuid "5148d016-f2fb-49a3-8b20-29afbbedb971")
 	)
-	(label "F2_L"
+	(label "GND_24"
 		(at 259.08 185.42 0)
 		(effects
 			(font
@@ -9262,7 +9262,7 @@
 		)
 		(uuid "55d57909-bbf2-44f1-8385-db81303b0457")
 	)
-	(label "GND_24"
+	(label "LC3_H"
 		(at 210.82 205.74 0)
 		(effects
 			(font
@@ -9312,7 +9312,7 @@
 		)
 		(uuid "5e7a271b-3b3b-4939-b957-be57ecc4a8a7")
 	)
-	(label "F3_SHUNT"
+	(label "LC3_L"
 		(at 152.4 208.28 0)
 		(effects
 			(font
@@ -9322,7 +9322,7 @@
 		)
 		(uuid "5ea34735-5e2c-4a8f-8b7f-a51f2b261080")
 	)
-	(label "PS1_H"
+	(label "PT1_L"
 		(at 127 241.3 0)
 		(effects
 			(font
@@ -9392,7 +9392,7 @@
 		)
 		(uuid "63ed9a15-8543-4ec1-88b6-c397a1c3cf9b")
 	)
-	(label "F3_L"
+	(label "LC3_L"
 		(at 519.43 106.68 0)
 		(effects
 			(font
@@ -9402,7 +9402,7 @@
 		)
 		(uuid "63f17562-cc70-4151-adbe-f488e4550aa0")
 	)
-	(label "GND_24"
+	(label "LC2_H"
 		(at 259.08 180.34 0)
 		(effects
 			(font
@@ -9422,7 +9422,7 @@
 		)
 		(uuid "68319895-e9dc-4e22-9f86-a15f3f4a4d0c")
 	)
-	(label "WG4_L"
+	(label "GND_12"
 		(at 76.2 128.27 0)
 		(effects
 			(font
@@ -9452,7 +9452,7 @@
 		)
 		(uuid "6fa1edab-062a-458b-8996-eaf2739a0f95")
 	)
-	(label "F1_H"
+	(label "LC1_H"
 		(at 519.43 124.46 0)
 		(effects
 			(font
@@ -9462,7 +9462,7 @@
 		)
 		(uuid "7079f08b-ef24-4842-8a8e-5b2a87ea0315")
 	)
-	(label "GND_24ISO"
+	(label "PT1_H"
 		(at 127 238.76 0)
 		(effects
 			(font
@@ -9472,7 +9472,7 @@
 		)
 		(uuid "74dd1fa3-4104-48e2-b963-0170cf055cee")
 	)
-	(label "WG1_H"
+	(label "WG1_L"
 		(at 76.2 49.53 0)
 		(effects
 			(font
@@ -9492,7 +9492,7 @@
 		)
 		(uuid "761bfde7-bd04-4cac-96f8-adb0112cfa70")
 	)
-	(label "WG3_L"
+	(label "GND_12"
 		(at 76.2 102.87 0)
 		(effects
 			(font
@@ -9512,8 +9512,8 @@
 		)
 		(uuid "7ae043fc-14e7-459d-a60e-964129ed7363")
 	)
-	(label "F1_H"
-		(at 259.08 162.56 0)
+	(label "LC1_L"
+		(at 259.08 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9522,7 +9522,7 @@
 		)
 		(uuid "7b254143-1f66-4df9-8540-55a03a24e2be")
 	)
-	(label "GND_24"
+	(label "LC2_H"
 		(at 152.4 180.34 0)
 		(effects
 			(font
@@ -9552,7 +9552,7 @@
 		)
 		(uuid "7e5b9186-5277-437d-be71-385205ebddf6")
 	)
-	(label "PS1_L"
+	(label "PT1_L"
 		(at 424.18 198.12 180)
 		(effects
 			(font
@@ -9562,7 +9562,7 @@
 		)
 		(uuid "7e82bdb0-0429-4bd5-b04b-ac3d2844846f")
 	)
-	(label "WG2_L"
+	(label "GND_12"
 		(at 195.58 77.47 0)
 		(effects
 			(font
@@ -9572,7 +9572,7 @@
 		)
 		(uuid "7f0a26ec-4305-4eb1-bb3f-0d9ab1e22894")
 	)
-	(label "GND_12"
+	(label "WG3_H"
 		(at 76.2 97.79 0)
 		(effects
 			(font
@@ -9582,7 +9582,7 @@
 		)
 		(uuid "7ff9e637-15b5-4244-b302-8a2292d8e225")
 	)
-	(label "F3_L"
+	(label "GND_24"
 		(at 210.82 210.82 0)
 		(effects
 			(font
@@ -9622,7 +9622,7 @@
 		)
 		(uuid "864925aa-801e-4c68-b1bf-a53cdc201d5b")
 	)
-	(label "WG3_H"
+	(label "WG3_L"
 		(at 76.2 100.33 0)
 		(effects
 			(font
@@ -9642,7 +9642,7 @@
 		)
 		(uuid "8a8c3ae1-1286-41c0-979e-48102f5e4092")
 	)
-	(label "PS1_L"
+	(label "GND_24ISO"
 		(at 127 243.84 0)
 		(effects
 			(font
@@ -9672,7 +9672,7 @@
 		)
 		(uuid "8c6195f9-414d-4fcc-9e5a-a5887bb25a60")
 	)
-	(label "F3_SHUNT"
+	(label "LC3_L"
 		(at 210.82 208.28 0)
 		(effects
 			(font
@@ -9682,7 +9682,7 @@
 		)
 		(uuid "8ca34117-f2e1-49a1-bb31-3e02ba2ea315")
 	)
-	(label "WG3_H"
+	(label "WG3_L"
 		(at 195.58 100.33 0)
 		(effects
 			(font
@@ -9702,8 +9702,8 @@
 		)
 		(uuid "8e8e4ff9-837e-4e93-a79d-c23c200da3b4")
 	)
-	(label "F3_H"
-		(at 259.08 213.36 0)
+	(label "LC3_L"
+		(at 259.08 208.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9722,7 +9722,7 @@
 		)
 		(uuid "90f81f6e-2608-4fda-9541-23c835b84212")
 	)
-	(label "GND_12"
+	(label "WG1_H"
 		(at 195.58 46.99 0)
 		(effects
 			(font
@@ -9762,7 +9762,7 @@
 		)
 		(uuid "98dc4ba9-d198-495a-9aca-0bc84aa078ff")
 	)
-	(label "WG1_H"
+	(label "WG1_L"
 		(at 147.32 49.53 0)
 		(effects
 			(font
@@ -9792,7 +9792,7 @@
 		)
 		(uuid "9c4c94c4-7156-42dd-967c-dd712f88b24b")
 	)
-	(label "WG4_H"
+	(label "WG4_L"
 		(at 147.32 125.73 0)
 		(effects
 			(font
@@ -9802,7 +9802,7 @@
 		)
 		(uuid "9fb8604b-23e5-4974-8a77-245cd610a5d7")
 	)
-	(label "WG2_L"
+	(label "GND_12"
 		(at 76.2 77.47 0)
 		(effects
 			(font
@@ -9812,7 +9812,7 @@
 		)
 		(uuid "a0cd338f-6508-44cc-9f56-d0b64a3dc981")
 	)
-	(label "GND_24"
+	(label "LC2_H"
 		(at 210.82 180.34 0)
 		(effects
 			(font
@@ -9822,7 +9822,7 @@
 		)
 		(uuid "a0ea06bf-ab8f-456e-85fd-585b2723d841")
 	)
-	(label "F1_SHUNT"
+	(label "LC1_L"
 		(at 210.82 157.48 0)
 		(effects
 			(font
@@ -9832,7 +9832,7 @@
 		)
 		(uuid "a2401d10-3e5a-49f5-be32-df29339b4873")
 	)
-	(label "GND_24ISO"
+	(label "PT1_H"
 		(at 76.2 238.76 0)
 		(effects
 			(font
@@ -9842,7 +9842,7 @@
 		)
 		(uuid "a44f8489-126c-4cd8-ab28-f09f5b344a66")
 	)
-	(label "GND_24"
+	(label "LC1_H"
 		(at 152.4 154.94 0)
 		(effects
 			(font
@@ -9852,7 +9852,7 @@
 		)
 		(uuid "a454faf7-f072-46ad-872d-46ba4a147638")
 	)
-	(label "F1_L"
+	(label "GND_24"
 		(at 152.4 160.02 0)
 		(effects
 			(font
@@ -9892,7 +9892,7 @@
 		)
 		(uuid "abb56960-aac5-4100-9033-c4a925e22796")
 	)
-	(label "WG2_H"
+	(label "WG2_L"
 		(at 147.32 74.93 0)
 		(effects
 			(font
@@ -9942,7 +9942,7 @@
 		)
 		(uuid "b2d586f5-aa0e-4a9c-8f25-f6ab8447c0b8")
 	)
-	(label "GND_24ISO"
+	(label "PT1_H"
 		(at 175.26 238.76 0)
 		(effects
 			(font
@@ -9952,7 +9952,7 @@
 		)
 		(uuid "b6739d1c-c4b9-448d-acd1-cb4e890092e9")
 	)
-	(label "WG2_H"
+	(label "WG2_L"
 		(at 195.58 74.93 0)
 		(effects
 			(font
@@ -9962,7 +9962,7 @@
 		)
 		(uuid "b77eab09-db14-4be3-87d0-1c14936cfe57")
 	)
-	(label "PS1_L"
+	(label "PT1_L"
 		(at 519.43 99.06 0)
 		(effects
 			(font
@@ -9982,7 +9982,7 @@
 		)
 		(uuid "b9929905-b57a-4df2-a685-084af2ba7ea2")
 	)
-	(label "F2_L"
+	(label "GND_24"
 		(at 152.4 185.42 0)
 		(effects
 			(font
@@ -10012,7 +10012,7 @@
 		)
 		(uuid "bc21516f-0921-4d82-bc61-b91d22e7788e")
 	)
-	(label "WG4_L"
+	(label "GND_12"
 		(at 147.32 128.27 0)
 		(effects
 			(font
@@ -10022,7 +10022,7 @@
 		)
 		(uuid "bf009b55-0e0a-4683-aaea-de9141935efb")
 	)
-	(label "WG1_L"
+	(label "GND_12"
 		(at 147.32 52.07 0)
 		(effects
 			(font
@@ -10032,7 +10032,7 @@
 		)
 		(uuid "bf1c60bd-01ee-44cf-b072-c99136b36f62")
 	)
-	(label "F2_L"
+	(label "LC2_L"
 		(at 519.43 114.3 0)
 		(effects
 			(font
@@ -10072,7 +10072,7 @@
 		)
 		(uuid "c03d0ad4-2b68-40a7-b764-3480f4acb68f")
 	)
-	(label "F1_L"
+	(label "LC1_L"
 		(at 519.43 121.92 0)
 		(effects
 			(font
@@ -10082,7 +10082,7 @@
 		)
 		(uuid "c23bb253-07e7-4031-b97a-dab096d49d2f")
 	)
-	(label "F1_L"
+	(label "GND_24"
 		(at 259.08 160.02 0)
 		(effects
 			(font
@@ -10102,7 +10102,7 @@
 		)
 		(uuid "c291164d-d1cd-4fe3-bb7c-851a20ceaa81")
 	)
-	(label "PS1_L"
+	(label "GND_24ISO"
 		(at 76.2 243.84 0)
 		(effects
 			(font
@@ -10112,7 +10112,7 @@
 		)
 		(uuid "c5ac51fc-7560-4e49-ac52-ce7146a5bd3f")
 	)
-	(label "F1_H"
+	(label "LC1_SHUNT"
 		(at 210.82 162.56 0)
 		(effects
 			(font
@@ -10132,7 +10132,7 @@
 		)
 		(uuid "c629e96d-5194-4db5-92c6-536f4662fca7")
 	)
-	(label "F3_H"
+	(label "LC3_SHUNT"
 		(at 210.82 213.36 0)
 		(effects
 			(font
@@ -10142,7 +10142,7 @@
 		)
 		(uuid "c78d82f6-592c-422e-b54a-3260c9a25579")
 	)
-	(label "F3_H"
+	(label "LC3_H"
 		(at 519.43 109.22 0)
 		(effects
 			(font
@@ -10152,7 +10152,7 @@
 		)
 		(uuid "c7ca0d3a-9d79-4bb8-9ed4-3f1951df3cc9")
 	)
-	(label "F3_L"
+	(label "GND_24"
 		(at 259.08 210.82 0)
 		(effects
 			(font
@@ -10172,7 +10172,7 @@
 		)
 		(uuid "cabf7fb2-76bf-476d-b6f3-c81fdaff63ea")
 	)
-	(label "F1_SHUNT"
+	(label "LC1_L"
 		(at 152.4 157.48 0)
 		(effects
 			(font
@@ -10182,7 +10182,7 @@
 		)
 		(uuid "cb147fc3-ad5b-45cf-8f1e-439a4cdde4e8")
 	)
-	(label "WG2_H"
+	(label "WG2_L"
 		(at 76.2 74.93 0)
 		(effects
 			(font
@@ -10222,7 +10222,7 @@
 		)
 		(uuid "cdc86f4d-b3e4-4db8-a610-ab7926e4d234")
 	)
-	(label "WG1_L"
+	(label "GND_12"
 		(at 76.2 52.07 0)
 		(effects
 			(font
@@ -10232,7 +10232,7 @@
 		)
 		(uuid "ce4dce45-0448-4287-89cc-8ef36dc670f8")
 	)
-	(label "WG4_L"
+	(label "GND_12"
 		(at 195.58 128.27 0)
 		(effects
 			(font
@@ -10282,7 +10282,7 @@
 		)
 		(uuid "de7c04af-8fca-4640-a6da-c2ba6bc2eccd")
 	)
-	(label "GND_24"
+	(label "LC1_H"
 		(at 259.08 154.94 0)
 		(effects
 			(font
@@ -10292,7 +10292,7 @@
 		)
 		(uuid "e071c59d-9675-48bc-bebb-16da4332f75c")
 	)
-	(label "WG4_H"
+	(label "WG4_L"
 		(at 195.58 125.73 0)
 		(effects
 			(font
@@ -10342,7 +10342,7 @@
 		)
 		(uuid "e66f0ed9-7cc2-4581-93b7-2f661d0dc0d4")
 	)
-	(label "F1_H"
+	(label "LC1_SHUNT"
 		(at 152.4 162.56 0)
 		(effects
 			(font
@@ -10362,7 +10362,7 @@
 		)
 		(uuid "e93e82e3-2436-4321-a6ab-57dc1f333f74")
 	)
-	(label "F2_H"
+	(label "LC2_SHUNT"
 		(at 210.82 187.96 0)
 		(effects
 			(font
@@ -10372,7 +10372,7 @@
 		)
 		(uuid "ea374866-627d-4e2a-bf59-b4153ba5041e")
 	)
-	(label "F2_SHUNT"
+	(label "LC2_L"
 		(at 152.4 182.88 0)
 		(effects
 			(font
@@ -10392,7 +10392,7 @@
 		)
 		(uuid "ef36a8de-6bfb-4a23-b00a-9ef9434ebfe1")
 	)
-	(label "GND_12"
+	(label "WG2_H"
 		(at 76.2 72.39 0)
 		(effects
 			(font
@@ -10402,7 +10402,7 @@
 		)
 		(uuid "f017edfc-9bfe-44c8-859f-212705a70332")
 	)
-	(label "WG1_L"
+	(label "GND_12"
 		(at 195.58 52.07 0)
 		(effects
 			(font
@@ -10412,7 +10412,7 @@
 		)
 		(uuid "f0881395-8281-49b6-b55b-44e6d341185c")
 	)
-	(label "F2_L"
+	(label "GND_24"
 		(at 210.82 185.42 0)
 		(effects
 			(font
@@ -10442,7 +10442,7 @@
 		)
 		(uuid "f2d966b3-0eec-442c-9931-a59e65105b2d")
 	)
-	(label "PS1_H"
+	(label "PT1_L"
 		(at 175.26 241.3 0)
 		(effects
 			(font

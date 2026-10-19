@@ -12,7 +12,7 @@
 | Channels | Source | Range |
 |---|---|---|
 | CH0–CH3 | Wave gauges WG1–4 | ±10 V |
-| CH4–CH6 | Load cells F1–3 (via IAA100) | ±10 V |
+| CH4–CH6 | Load cells LC1–3 (via IAA100) | ±10 V |
 | CH7 | Setra 239 pressure | **±5 V** (output is ±2.5 V = ±15 inWC) |
 
 The 1608G supports per-channel ranges (channel-gain queue) - DAQami handles this natively.
