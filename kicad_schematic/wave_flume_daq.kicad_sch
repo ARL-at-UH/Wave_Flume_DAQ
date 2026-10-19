@@ -6100,7 +6100,7 @@
 		)
 		(uuid "438629d0-69f6-4c13-ba23-25c46e1f1e4a")
 	)
-	(text "J5-J8 = M12 A-code 5-pos: field wires -> Phoenix SACC-M12FS-5PL (1424652) push-lock plug; panel side TE T4171010005-002 male receptacle, 0.5 m pigtail -> DIN rails."
+	(text "J5-J8 = M12 A-code 5-pos: field wires -> TE T4110001051-000 screw-terminal plug; panel side TE T4171010005-002 male receptacle, 0.5 m pigtail -> DIN rails."
 		(exclude_from_sim no)
 		(at 30.48 146.05 0)
 		(effects
@@ -6111,7 +6111,7 @@
 		)
 		(uuid "4394bd53-0f88-4b41-8211-7acaa3f72181")
 	)
-	(text "J1-J4 = M12 B-code 5-pos: Phoenix SACC-M12FSB-5PL SH (1424664) push-lock plug on the wire bundle (heat-shrink at the gland); TE T4171010405-002 receptacle -> DIN rails."
+	(text "J1-J4 = M12 B-code 5-pos: TE T4110402051-000 screw-terminal plug on the cable (heat-shrink at the gland); TE T4171010405-002 receptacle -> DIN rails."
 		(exclude_from_sim no)
 		(at 30.48 36.83 0)
 		(effects
