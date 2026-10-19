@@ -47,3 +47,7 @@ https://github.com/ARL-at-UH/Wave_Flume_DAQ/blob/main/kicad_schematic/wave_flume
 | [`docs/`](docs/) | Hosted ICD (`index.html`), step-by-step [`procedures/`](docs/procedures/), [`debug/`](docs/debug/) guides, schematic PDF, as-ordered BOM |
 | [`ref/`](ref/) | Primary sources: sensor/DAQ manufacturer manuals and drawings (indexed in its README) |
 | [`kicad_schematic/`](kicad_schematic/) | KiCad 9/10 project - schematic, project symbol library |
+
+
+
+## cite
