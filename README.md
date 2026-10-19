@@ -1,5 +1,9 @@
 # Wave Flume DAQ Panel
 
+> ### 📖 [Documentation site →](https://arl-at-uh.github.io/Wave_Flume_DAQ/)
+> The full Interface Control Document - every pinout, cable, terminal, and the grounding
+> rationale - lives at **<https://arl-at-uh.github.io/Wave_Flume_DAQ/>**
+
 DAQ panel for a laboratory wave flume: 4× Akamina AWP-24-3 wave-height
 gauges, 3× FUTEK LSB210 load cells (through IAA100 amplifiers at the flume), and a Setra 239
 differential pressure transducer - all eight channels **differential** into an MCC **USB-1608G**

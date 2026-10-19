@@ -20,6 +20,8 @@
     --warn-border: #d97706;
     --ok: #2f7d4f;
     --code-bg: #eef3f2;
+    --fig-bg: #ffffff;
+    --fig-muted: #44606a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -35,6 +37,8 @@
       --warn-border: #b97a29;
       --ok: #6fbf8f;
       --code-bg: #1c2f35;
+      --fig-bg: #090f12;
+      --fig-muted: #aec3c8;
     }
   }
   :root[data-theme="light"] {
@@ -42,12 +46,14 @@
     --line: #d3dedd; --accent: #0b7285; --accent-soft: #e0eef1;
     --pwr: #b45309; --pwr-soft: #fdf1e3; --warn-border: #d97706;
     --ok: #2f7d4f; --code-bg: #eef3f2;
+    --fig-bg: #ffffff; --fig-muted: #44606a;
   }
   :root[data-theme="dark"] {
     --bg: #0f1a1d; --surface: #16252a; --ink: #dfeaea; --muted: #8ba4a9;
     --line: #2b4147; --accent: #56bdd1; --accent-soft: #123a43;
     --pwr: #e8a25a; --pwr-soft: #33220f; --warn-border: #b97a29;
     --ok: #6fbf8f; --code-bg: #1c2f35;
+    --fig-bg: #090f12; --fig-muted: #aec3c8;
   }
 
   * { box-sizing: border-box; }
@@ -98,7 +104,7 @@
   .callout.info .tag { color: var(--accent); }
 
   figure { margin: 1.5rem 0 2rem; }
-  figure svg { max-width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+  figure svg { max-width: 100%; height: auto; display: block; background: var(--fig-bg); border: 1px solid var(--line); border-radius: 10px; --muted: var(--fig-muted); --surface: var(--fig-bg); }
   figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.55rem; max-width: 78ch; }
 
   .tablewrap { overflow-x: auto; margin: 0.8rem 0 1.6rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
@@ -320,14 +326,14 @@ bench supply leads and USB enter through glands.</p>
   <line x1="164" y1="117" x2="256" y2="117" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="164" y1="167" x2="256" y2="167" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="164" y1="217" x2="256" y2="217" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="210" y="40" font-size="10.5" fill="var(--muted)" text-anchor="middle">W1–W4 · 5 single wires</text>
+  <text x="210" y="40" font-size="10.5" fill="var(--muted)" text-anchor="middle">W1–W4 · 2-pair shielded</text>
   <text x="210" y="252" font-size="10.5" fill="var(--muted)" text-anchor="middle">±5 V pair + 12 V pair</text>
 
   <!-- LC cables -->
   <line x1="164" y1="301" x2="174" y2="301" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="164" y1="351" x2="174" y2="351" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="164" y1="401" x2="174" y2="401" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="210" y="274" font-size="10.5" fill="var(--muted)" text-anchor="middle">cell → amp → J5–J7 (W12–W14, 5-cond)</text>
+  <text x="200" y="274" font-size="10.5" fill="var(--muted)" text-anchor="middle">cell → amp → J5–J7 (W12–W14)</text>
 
   <!-- setra cable -->
   <line x1="164" y1="489" x2="258" y2="489" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -385,13 +391,15 @@ bench supply leads and USB enter through glands.</p>
     <text x="716" y="378">← GND-bus drops + shields</text>
   </g>
   <line x1="624" y1="280" x2="696" y2="280" stroke="currentColor" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="660" y="270" font-size="10.5" fill="var(--muted)" text-anchor="middle">8 H/L pairs + AGND</text>
+  <text x="660" y="268" font-size="9.5" fill="var(--muted)" text-anchor="middle">8 H/L pairs</text>
+  <text x="660" y="297" font-size="9.5" fill="var(--muted)" text-anchor="middle">+ AGND</text>
 
   <!-- ISO 24 -->
-  <rect x="340" y="440" width="140" height="34" rx="6" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
-  <text x="350" y="461" font-size="11.5" font-weight="600">A3 · HDR-15-24 (iso island)</text>
-  <path d="M338,461 L300,478" stroke="var(--pwr)" stroke-width="1.5" fill="none" marker-end="url(#arrP)"/>
-  <text x="322" y="452" font-size="10" fill="var(--pwr)" text-anchor="end">+Exc / −Exc (isolated)</text>
+  <rect x="170" y="524" width="152" height="42" rx="6" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
+  <text x="180" y="541" font-size="11.5" font-weight="600">A3 · HDR-15-24</text>
+  <text x="180" y="557" font-size="10" fill="var(--muted)">iso island → Setra</text>
+  <path d="M252,522 L264,501" stroke="var(--pwr)" stroke-width="1.5" fill="none" marker-end="url(#arrP)"/>
+  <text x="246" y="582" font-size="10" fill="var(--pwr)" text-anchor="middle">+Exc / −Exc · fully isolated</text>
 
   <!-- TB-PWR -->
   <rect x="340" y="520" width="160" height="56" rx="6" fill="var(--pwr-soft)" stroke="var(--pwr)"/>
@@ -402,8 +410,8 @@ bench supply leads and USB enter through glands.</p>
   <path d="M410,516 L410,428" stroke="var(--pwr)" stroke-width="1.5" fill="none" marker-end="url(#arrP)"/>
   <text x="418" y="440" font-size="10" fill="var(--pwr)">+24 V to IAA-1…3</text>
   <path d="M410,436 L410,474" stroke="var(--pwr)" stroke-width="1.5" fill="none"/>
-  <path d="M336,548 L300,548 L300,240" stroke="var(--pwr)" stroke-width="1.5" fill="none" marker-end="url(#arrP)"/>
-  <text x="308" y="240" font-size="10" fill="var(--pwr)">12 V to WG1–4 via J1–J4</text>
+  <path d="M344,516 L330,500 L330,240" stroke="var(--pwr)" stroke-width="1.5" fill="none" marker-end="url(#arrP)"/>
+  <text x="338" y="240" font-size="10" fill="var(--pwr)">12 V to WG1–4 via J1–J4</text>
 
   <!-- PSU / PC external -->
   <rect x="300" y="650" width="220" height="54" rx="6" fill="none" stroke="var(--pwr)"/>
@@ -721,7 +729,7 @@ FBS 4-5 3030187 ×3 - the 6-block GND bus is bridged with one FBS 5-5 + one FBS 
   <text x="620" y="152" font-size="9.5" fill="var(--muted)">LC1–LC3 + PT1 pairs ↗ bottom bank</text>
   <rect x="770" y="96" width="24" height="30" rx="3" fill="none" stroke="var(--ok)" stroke-width="2"/>
   <text x="782" y="90" font-size="9" text-anchor="middle" fill="var(--ok)">PE</text>
-  <text x="200" y="96" font-size="9.5" fill="var(--muted)">USB cable ← velcro'd along rail</text>
+  <text x="110" y="96" font-size="9.5" fill="var(--muted)">USB cable runs left</text>
 
   <!-- duct -->
   <rect x="90" y="176" width="720" height="16" fill="var(--code-bg)" stroke="var(--muted)" stroke-width="1"/>
@@ -760,7 +768,7 @@ FBS 4-5 3030187 ×3 - the 6-block GND bus is bridged with one FBS 5-5 + one FBS 
   <text x="220" y="426" font-size="9" text-anchor="middle">WG2</text>
   <text x="267" y="426" font-size="9" text-anchor="middle">WG3</text>
   <text x="315" y="426" font-size="9" text-anchor="middle">WG4</text>
-  <text x="245" y="446" font-size="8" text-anchor="middle" fill="var(--muted)">1 BRN-12V · 2 WHT-SIG · 3 BLU-AGND · 4 BLK-GND · 5 GRY-SHLD</text>
+  <text x="245" y="486" font-size="8" text-anchor="middle" fill="var(--muted)">1 BRN-12V · 2 WHT-SIG · 3 BLU-AGND · 4 BLK-GND · 5 GRY-SHLD</text>
   <rect x="360" y="404" width="145" height="54" rx="4" fill="none" stroke="currentColor"/>
   <g stroke="var(--line)"><line x1="408" y1="404" x2="408" y2="458"/><line x1="456" y1="404" x2="456" y2="458"/></g>
   <text x="384" y="426" font-size="9" text-anchor="middle">LC1</text>
