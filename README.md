@@ -7,12 +7,13 @@ differential pressure transducer — all eight channels **differential** into an
 
 ## Schematic
 
+<!-- Re-enable once docs/schematic.svg + schematic-dark.svg are exported (kicad-cli currently broken):
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/schematic-dark.svg">
   <img alt="Wave flume DAQ interconnect schematic" src="docs/schematic.svg">
 </picture>
-
-*Zoom in — it's vector. Printable copy: [`docs/wave_flume_daq_schematic.pdf`](docs/wave_flume_daq_schematic.pdf)
+-->
+*Printable copy: [`docs/wave_flume_daq_schematic.pdf`](docs/wave_flume_daq_schematic.pdf)
 (A2 sheet — print poster-tiled at 100% or large-format).*
 
 **Interactive viewer:** [open the schematic in KiCanvas](https://kicanvas.org/?github=https://github.com/ARL-at-UH/Wave_Flume_DAQ/blob/main/kicad_schematic/wave_flume_daq.kicad_sch) —
